@@ -1,0 +1,784 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="1" failures="0" name="com.taotao.test.TestPageHelper" time="6.222" errors="1" skipped="0">
+  <properties>
+    <property name="idea.version" value="2018.1.4"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_161\jre\bin"/>
+    <property name="java.vm.version" value="25.161-b12"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="F:\code\taotao\taotao-manager"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="F:\code\taotao\taotao-manager"/>
+    <property name="java.runtime.version" value="1.8.0_161-b12"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_161\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\Administrator\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="D:\ideaIU-2018.1.4.win\plugins\maven\lib\maven3\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_161\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\Git\cmd;C:\Program Files\Java\jdk1.8.0_161/bin;D:\ideaIU-2018.1.4.win\plugins\maven\lib\maven3/bin;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\Administrator"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="Administrator"/>
+    <property name="java.class.path" value="D:\ideaIU-2018.1.4.win\plugins\maven\lib\maven3\boot\plexus-classworlds-2.5.2.jar;D:\ideaIU-2018.1.4.win\lib\idea_rt.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_161\jre"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2018.1.4 install -f pom.xml"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="zh"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_161"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_161\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_161\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_161\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_161\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="D:\ideaIU-2018.1.4.win\plugins\maven\lib\maven3"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="com.taotao.test.TestPageHelper" name="testPageHelpmethod" time="6.222">
+    <error message="Fail to start server(url: dubbo://192.168.0.105:20880/com.taotao.service.TestService?anyhost=true&amp;application=taotao-manager&amp;channel.readonly.sent=true&amp;codec=dubbo&amp;dubbo=2.5.3&amp;heartbeat=60000&amp;interface=com.taotao.service.TestService&amp;methods=selectNow&amp;pid=16812&amp;revision=interface&amp;side=provider&amp;timestamp=1534617618359) Failed to bind NettyServer on /192.168.0.105:20880, cause: Failed to bind to: /0.0.0.0:20880" type="com.alibaba.dubbo.rpc.RpcException">com.alibaba.dubbo.rpc.RpcException: Fail to start server(url: dubbo://192.168.0.105:20880/com.taotao.service.TestService?anyhost=true&amp;application=taotao-manager&amp;channel.readonly.sent=true&amp;codec=dubbo&amp;dubbo=2.5.3&amp;heartbeat=60000&amp;interface=com.taotao.service.TestService&amp;methods=selectNow&amp;pid=16812&amp;revision=interface&amp;side=provider&amp;timestamp=1534617618359) Failed to bind NettyServer on /192.168.0.105:20880, cause: Failed to bind to: /0.0.0.0:20880
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.createServer(DubboProtocol.java:289)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.openServer(DubboProtocol.java:266)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.export(DubboProtocol.java:253)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper.export(ProtocolFilterWrapper.java:55)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolListenerWrapper.export(ProtocolListenerWrapper.java:56)
+	at com.alibaba.dubbo.rpc.Protocol$Adpative.export(Protocol$Adpative.java)
+	at com.alibaba.dubbo.registry.integration.RegistryProtocol.doLocalExport(RegistryProtocol.java:153)
+	at com.alibaba.dubbo.registry.integration.RegistryProtocol.export(RegistryProtocol.java:107)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper.export(ProtocolFilterWrapper.java:53)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolListenerWrapper.export(ProtocolListenerWrapper.java:54)
+	at com.alibaba.dubbo.rpc.Protocol$Adpative.export(Protocol$Adpative.java)
+	at com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:485)
+	at com.alibaba.dubbo.config.ServiceConfig.doExportUrls(ServiceConfig.java:281)
+	at com.alibaba.dubbo.config.ServiceConfig.doExport(ServiceConfig.java:242)
+	at com.alibaba.dubbo.config.ServiceConfig.export(ServiceConfig.java:143)
+	at com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:109)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:163)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:136)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:381)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:335)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:855)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:541)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.&lt;init&gt;(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.&lt;init&gt;(ClassPathXmlApplicationContext.java:83)
+	at com.taotao.test.TestPageHelper.testPageHelpmethod(TestPageHelper.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: com.alibaba.dubbo.remoting.RemotingException: Failed to bind NettyServer on /192.168.0.105:20880, cause: Failed to bind to: /0.0.0.0:20880
+	at com.alibaba.dubbo.remoting.transport.AbstractServer.&lt;init&gt;(AbstractServer.java:72)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyServer.&lt;init&gt;(NettyServer.java:63)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyTransporter.bind(NettyTransporter.java:33)
+	at com.alibaba.dubbo.remoting.Transporter$Adpative.bind(Transporter$Adpative.java)
+	at com.alibaba.dubbo.remoting.Transporters.bind(Transporters.java:48)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchanger.bind(HeaderExchanger.java:41)
+	at com.alibaba.dubbo.remoting.exchange.Exchangers.bind(Exchangers.java:63)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.createServer(DubboProtocol.java:287)
+	... 53 more
+Caused by: org.jboss.netty.channel.ChannelException: Failed to bind to: /0.0.0.0:20880
+	at org.jboss.netty.bootstrap.ServerBootstrap.bind(ServerBootstrap.java:272)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyServer.doOpen(NettyServer.java:94)
+	at com.alibaba.dubbo.remoting.transport.AbstractServer.&lt;init&gt;(AbstractServer.java:67)
+	... 60 more
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.jboss.netty.channel.socket.nio.NioServerBoss$RegisterTask.run(NioServerBoss.java:193)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.processTaskQueue(AbstractNioSelector.java:366)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:290)
+	at org.jboss.netty.channel.socket.nio.NioServerBoss.run(NioServerBoss.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</error>
+    <system-out>2018-08-19 02:40:13,590 [main] DEBUG [org.springframework.core.env.StandardEnvironment] - Adding [systemProperties] PropertySource with lowest search precedence
+2018-08-19 02:40:13,594 [main] DEBUG [org.springframework.core.env.StandardEnvironment] - Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-08-19 02:40:13,595 [main] DEBUG [org.springframework.core.env.StandardEnvironment] - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2018-08-19 02:40:13,608 [main] INFO  [org.springframework.context.support.ClassPathXmlApplicationContext] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3567135c: startup date [Sun Aug 19 02:40:13 CST 2018]; root of context hierarchy
+2018-08-19 02:40:13,684 [main] DEBUG [org.springframework.core.env.StandardEnvironment] - Adding [systemProperties] PropertySource with lowest search precedence
+2018-08-19 02:40:13,684 [main] DEBUG [org.springframework.core.env.StandardEnvironment] - Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-08-19 02:40:13,685 [main] DEBUG [org.springframework.core.env.StandardEnvironment] - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2018-08-19 02:40:13,708 [main] DEBUG [org.springframework.core.io.support.PathMatchingResourcePatternResolver] - Looking for matching resources in directory tree [F:\code\taotao\taotao-manager\taotao-manager-service\target\classes\spring]
+2018-08-19 02:40:13,708 [main] DEBUG [org.springframework.core.io.support.PathMatchingResourcePatternResolver] - Searching directory [F:\code\taotao\taotao-manager\taotao-manager-service\target\classes\spring] for files matching pattern [F:/code/taotao/taotao-manager/taotao-manager-service/target/classes/spring/applicationContext-*.xml]
+2018-08-19 02:40:13,714 [main] DEBUG [org.springframework.core.io.support.PathMatchingResourcePatternResolver] - Resolved location pattern [classpath:spring/applicationContext-*.xml] to resources [file [F:\code\taotao\taotao-manager\taotao-manager-service\target\classes\spring\applicationContext-dao.xml], file [F:\code\taotao\taotao-manager\taotao-manager-service\target\classes\spring\applicationContext-service.xml], file [F:\code\taotao\taotao-manager\taotao-manager-service\target\classes\spring\applicationContext-trans.xml]]
+2018-08-19 02:40:13,716 [main] INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from file [F:\code\taotao\taotao-manager\taotao-manager-service\target\classes\spring\applicationContext-dao.xml]
+2018-08-19 02:40:13,750 [main] DEBUG [org.springframework.beans.factory.xml.DefaultDocumentLoader] - Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+2018-08-19 02:40:13,822 [main] DEBUG [org.springframework.beans.factory.xml.PluggableSchemaResolver] - Loading schema mappings from [META-INF/spring.schemas]
+2018-08-19 02:40:13,834 [main] DEBUG [org.springframework.beans.factory.xml.PluggableSchemaResolver] - Loaded schema mappings: {http://www.springframework.org/schema/tx/spring-tx-2.5.xsd=org/springframework/transaction/config/spring-tx-2.5.xsd, http://www.springframework.org/schema/cache/spring-cache-4.2.xsd=org/springframework/cache/config/spring-cache-4.2.xsd, http://www.springframework.org/schema/aop/spring-aop-4.1.xsd=org/springframework/aop/config/spring-aop-4.1.xsd, http://www.springframework.org/schema/context/spring-context-3.1.xsd=org/springframework/context/config/spring-context-3.1.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-4.1.xsd=org/springframework/jdbc/config/spring-jdbc-4.1.xsd, http://www.springframework.org/schema/jms/spring-jms-2.5.xsd=org/springframework/jms/config/spring-jms-2.5.xsd, http://www.springframework.org/schema/mvc/spring-mvc-4.1.xsd=org/springframework/web/servlet/config/spring-mvc-4.1.xsd, http://www.springframework.org/schema/util/spring-util-3.0.xsd=org/springframework/beans/factory/xml/spring-util-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool.xsd=org/springframework/beans/factory/xml/spring-tool-4.2.xsd, http://www.springframework.org/schema/aop/spring-aop-3.2.xsd=org/springframework/aop/config/spring-aop-3.2.xsd, http://mybatis.org/schema/mybatis-spring-1.2.xsd=org/mybatis/spring/config/mybatis-spring-1.2.xsd, http://www.springframework.org/schema/lang/spring-lang-4.1.xsd=org/springframework/scripting/config/spring-lang-4.1.xsd, http://www.springframework.org/schema/context/spring-context-4.0.xsd=org/springframework/context/config/spring-context-4.0.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd=org/springframework/web/servlet/config/spring-mvc-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-4.2.xsd=org/springframework/beans/factory/xml/spring-beans-4.2.xsd, http://www.springframework.org/schema/tool/spring-tool-4.1.xsd=org/springframework/beans/factory/xml/spring-tool-4.1.xsd, http://www.springframework.org/schema/lang/spring-lang-3.2.xsd=org/springframework/scripting/config/spring-lang-3.2.xsd, http://www.springframework.org/schema/cache/spring-cache-3.2.xsd=org/springframework/cache/config/spring-cache-3.2.xsd, http://www.springframework.org/schema/jee/spring-jee-4.1.xsd=org/springframework/ejb/config/spring-jee-4.1.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.1.xsd=org/springframework/jdbc/config/spring-jdbc-3.1.xsd, http://www.springframework.org/schema/util/spring-util-2.0.xsd=org/springframework/beans/factory/xml/spring-util-2.0.xsd, http://www.springframework.org/schema/task/spring-task-4.2.xsd=org/springframework/scheduling/config/spring-task-4.2.xsd, http://www.springframework.org/schema/tool/spring-tool-3.2.xsd=org/springframework/beans/factory/xml/spring-tool-3.2.xsd, http://www.springframework.org/schema/context/spring-context.xsd=org/springframework/context/config/spring-context-4.2.xsd, http://www.springframework.org/schema/tx/spring-tx-4.2.xsd=org/springframework/transaction/config/spring-tx-4.2.xsd, http://www.springframework.org/schema/cache/spring-cache-4.1.xsd=org/springframework/cache/config/spring-cache-4.1.xsd, http://www.springframework.org/schema/aop/spring-aop-4.0.xsd=org/springframework/aop/config/spring-aop-4.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.2.xsd=org/springframework/ejb/config/spring-jee-3.2.xsd, http://www.springframework.org/schema/context/spring-context-3.0.xsd=org/springframework/context/config/spring-context-3.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-4.0.xsd=org/springframework/jdbc/config/spring-jdbc-4.0.xsd, http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd=org/springframework/web/servlet/config/spring-mvc-4.0.xsd, http://www.springframework.org/schema/util/spring-util-2.5.xsd=org/springframework/beans/factory/xml/spring-util-2.5.xsd, http://www.springframework.org/schema/beans/spring-beans-3.2.xsd=org/springframework/beans/factory/xml/spring-beans-3.2.xsd, http://www.springframework.org/schema/aop/spring-aop-3.1.xsd=org/springframework/aop/config/spring-aop-3.1.xsd, http://www.springframework.org/schema/lang/spring-lang-4.0.xsd=org/springframework/scripting/config/spring-lang-4.0.xsd, http://www.springframework.org/schema/mvc/spring-mvc.xsd=org/springframework/web/servlet/config/spring-mvc-4.2.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd=org/springframework/web/servlet/config/spring-mvc-3.1.xsd, http://www.springframework.org/schema/beans/spring-beans-4.1.xsd=org/springframework/beans/factory/xml/spring-beans-4.1.xsd, http://www.springframework.org/schema/tool/spring-tool-4.0.xsd=org/springframework/beans/factory/xml/spring-tool-4.0.xsd, http://www.springframework.org/schema/tx/spring-tx-3.2.xsd=org/springframework/transaction/config/spring-tx-3.2.xsd, http://www.springframework.org/schema/lang/spring-lang-3.1.xsd=org/springframework/scripting/config/spring-lang-3.1.xsd, http://www.springframework.org/schema/cache/spring-cache-3.1.xsd=org/springframework/cache/config/spring-cache-3.1.xsd, http://www.springframework.org/schema/jms/spring-jms-4.2.xsd=org/springframework/jms/config/spring-jms-4.2.xsd, http://www.springframework.org/schema/jee/spring-jee-4.0.xsd=org/springframework/ejb/config/spring-jee-4.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd=org/springframework/jdbc/config/spring-jdbc-3.0.xsd, http://www.springframework.org/schema/task/spring-task-4.1.xsd=org/springframework/scheduling/config/spring-task-4.1.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc.xsd=org/springframework/jdbc/config/spring-jdbc-4.2.xsd, http://www.springframework.org/schema/tool/spring-tool-3.1.xsd=org/springframework/beans/factory/xml/spring-tool-3.1.xsd, http://www.springframework.org/schema/tx/spring-tx-4.1.xsd=org/springframework/transaction/config/spring-tx-4.1.xsd, http://www.springframework.org/schema/cache/spring-cache-4.0.xsd=org/springframework/cache/config/spring-cache-4.0.xsd, http://code.alibabatech.com/schema/dubbo/dubbo.xsd=META-INF/dubbo.xsd, http://www.springframework.org/schema/jee/spring-jee-3.1.xsd=org/springframework/ejb/config/spring-jee-3.1.xsd, http://www.springframework.org/schema/util/spring-util-4.2.xsd=org/springframework/beans/factory/xml/spring-util-4.2.xsd, http://www.springframework.org/schema/task/spring-task-3.2.xsd=org/springframework/scheduling/config/spring-task-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-3.1.xsd=org/springframework/beans/factory/xml/spring-beans-3.1.xsd, http://www.springframework.org/schema/util/spring-util.xsd=org/springframework/beans/factory/xml/spring-util-4.2.xsd, http://www.springframework.org/schema/aop/spring-aop-3.0.xsd=org/springframework/aop/config/spring-aop-3.0.xsd, http://www.springframework.org/schema/jms/spring-jms-3.2.xsd=org/springframework/jms/config/spring-jms-3.2.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd=org/springframework/web/servlet/config/spring-mvc-3.0.xsd, http://www.springframework.org/schema/beans/spring-beans-4.0.xsd=org/springframework/beans/factory/xml/spring-beans-4.0.xsd, http://www.springframework.org/schema/beans/spring-beans.xsd=org/springframework/beans/factory/xml/spring-beans-4.2.xsd, http://www.springframework.org/schema/tx/spring-tx-3.1.xsd=org/springframework/transaction/config/spring-tx-3.1.xsd, http://www.springframework.org/schema/lang/spring-lang-3.0.xsd=org/springframework/scripting/config/spring-lang-3.0.xsd, http://mybatis.org/schema/mybatis-spring.xsd=org/mybatis/spring/config/mybatis-spring-1.2.xsd, http://www.springframework.org/schema/context/spring-context-2.5.xsd=org/springframework/context/config/spring-context-2.5.xsd, http://www.springframework.org/schema/jms/spring-jms-4.1.xsd=org/springframework/jms/config/spring-jms-4.1.xsd, http://www.springframework.org/schema/task/spring-task-4.0.xsd=org/springframework/scheduling/config/spring-task-4.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.0.xsd=org/springframework/beans/factory/xml/spring-tool-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx-4.0.xsd=org/springframework/transaction/config/spring-tx-4.0.xsd, http://www.springframework.org/schema/aop/spring-aop-2.0.xsd=org/springframework/aop/config/spring-aop-2.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.0.xsd=org/springframework/ejb/config/spring-jee-3.0.xsd, http://www.springframework.org/schema/util/spring-util-4.1.xsd=org/springframework/beans/factory/xml/spring-util-4.1.xsd, http://www.springframework.org/schema/task/spring-task-3.1.xsd=org/springframework/scheduling/config/spring-task-3.1.xsd, http://www.springframework.org/schema/beans/spring-beans-3.0.xsd=org/springframework/beans/factory/xml/spring-beans-3.0.xsd, http://www.springframework.org/schema/jee/spring-jee.xsd=org/springframework/ejb/config/spring-jee-4.2.xsd, http://www.springframework.org/schema/jms/spring-jms.xsd=org/springframework/jms/config/spring-jms-4.2.xsd, http://www.springframework.org/schema/aop/spring-aop-2.5.xsd=org/springframework/aop/config/spring-aop-2.5.xsd, http://www.springframework.org/schema/lang/spring-lang-2.0.xsd=org/springframework/scripting/config/spring-lang-2.0.xsd, http://www.springframework.org/schema/jms/spring-jms-3.1.xsd=org/springframework/jms/config/spring-jms-3.1.xsd, http://www.springframework.org/schema/util/spring-util-3.2.xsd=org/springframework/beans/factory/xml/spring-util-3.2.xsd, http://www.springframework.org/schema/task/spring-task.xsd=org/springframework/scheduling/config/spring-task-4.2.xsd, http://www.springframework.org/schema/tool/spring-tool-2.0.xsd=org/springframework/beans/factory/xml/spring-tool-2.0.xsd, http://www.springframework.org/schema/tx/spring-tx-3.0.xsd=org/springframework/transaction/config/spring-tx-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-2.5.xsd=org/springframework/scripting/config/spring-lang-2.5.xsd, http://www.springframework.org/schema/context/spring-context-4.2.xsd=org/springframework/context/config/spring-context-4.2.xsd, http://www.springframework.org/schema/jms/spring-jms-4.0.xsd=org/springframework/jms/config/spring-jms-4.0.xsd, http://www.springframework.org/schema/jee/spring-jee-2.0.xsd=org/springframework/ejb/config/spring-jee-2.0.xsd, http://www.springframework.org/schema/tool/spring-tool-2.5.xsd=org/springframework/beans/factory/xml/spring-tool-2.5.xsd, http://www.springframework.org/schema/jee/spring-jee-2.5.xsd=org/springframework/ejb/config/spring-jee-2.5.xsd, http://www.springframework.org/schema/util/spring-util-4.0.xsd=org/springframework/beans/factory/xml/spring-util-4.0.xsd, http://www.springframework.org/schema/task/spring-task-3.0.xsd=org/springframework/scheduling/config/spring-task-3.0.xsd, http://www.springframework.org/schema/aop/spring-aop-4.2.xsd=org/springframework/aop/config/spring-aop-4.2.xsd, http://www.springframework.org/schema/lang/spring-lang.xsd=org/springframework/scripting/config/spring-lang-4.2.xsd, http://www.springframework.org/schema/context/spring-context-3.2.xsd=org/springframework/context/config/spring-context-3.2.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-4.2.xsd=org/springframework/jdbc/config/spring-jdbc-4.2.xsd, http://www.springframework.org/schema/jms/spring-jms-3.0.xsd=org/springframework/jms/config/spring-jms-3.0.xsd, http://www.springframework.org/schema/mvc/spring-mvc-4.2.xsd=org/springframework/web/servlet/config/spring-mvc-4.2.xsd, http://www.springframework.org/schema/util/spring-util-3.1.xsd=org/springframework/beans/factory/xml/spring-util-3.1.xsd, http://www.springframework.org/schema/beans/spring-beans-2.0.xsd=org/springframework/beans/factory/xml/spring-beans-2.0.xsd, http://www.springframework.org/schema/cache/spring-cache.xsd=org/springframework/cache/config/spring-cache-4.2.xsd, http://www.springframework.org/schema/tx/spring-tx.xsd=org/springframework/transaction/config/spring-tx-4.2.xsd, http://www.springframework.org/schema/lang/spring-lang-4.2.xsd=org/springframework/scripting/config/spring-lang-4.2.xsd, http://www.springframework.org/schema/context/spring-context-4.1.xsd=org/springframework/context/config/spring-context-4.1.xsd, http://www.springframework.org/schema/beans/spring-beans-2.5.xsd=org/springframework/beans/factory/xml/spring-beans-2.5.xsd, http://www.springframework.org/schema/tool/spring-tool-4.2.xsd=org/springframework/beans/factory/xml/spring-tool-4.2.xsd, http://www.springframework.org/schema/tx/spring-tx-2.0.xsd=org/springframework/transaction/config/spring-tx-2.0.xsd, http://www.springframework.org/schema/jee/spring-jee-4.2.xsd=org/springframework/ejb/config/spring-jee-4.2.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.2.xsd=org/springframework/jdbc/config/spring-jdbc-3.2.xsd, http://www.springframework.org/schema/aop/spring-aop.xsd=org/springframework/aop/config/spring-aop-4.2.xsd}
+2018-08-19 02:40:13,839 [main] DEBUG [org.springframework.beans.factory.xml.PluggableSchemaResolver] - Found XML schema [http://www.springframework.org/schema/beans/spring-beans-4.2.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-4.2.xsd
+2018-08-19 02:40:13,917 [main] DEBUG [org.springframework.beans.factory.xml.PluggableSchemaResolver] - Found XML schema [http://www.springframework.org/schema/context/spring-context-4.2.xsd] in classpath: org/springframework/context/config/spring-context-4.2.xsd
+2018-08-19 02:40:13,932 [main] DEBUG [org.springframework.beans.factory.xml.PluggableSchemaResolver] - Found XML schema [http://www.springframework.org/schema/tool/spring-tool-4.2.xsd] in classpath: org/springframework/beans/factory/xml/spring-tool-4.2.xsd
+2018-08-19 02:40:13,952 [main] DEBUG [org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader] - Loading bean definitions
+2018-08-19 02:40:13,974 [main] DEBUG [org.springframework.beans.factory.xml.DefaultNamespaceHandlerResolver] - Loaded NamespaceHandler mappings: {http://www.springframework.org/schema/p=org.springframework.beans.factory.xml.SimplePropertyNamespaceHandler, http://www.springframework.org/schema/mvc=org.springframework.web.servlet.config.MvcNamespaceHandler, http://www.springframework.org/schema/util=org.springframework.beans.factory.xml.UtilNamespaceHandler, http://code.alibabatech.com/schema/dubbo=com.alibaba.dubbo.config.spring.schema.DubboNamespaceHandler, http://www.springframework.org/schema/jee=org.springframework.ejb.config.JeeNamespaceHandler, http://www.springframework.org/schema/aop=org.springframework.aop.config.AopNamespaceHandler, http://www.springframework.org/schema/jdbc=org.springframework.jdbc.config.JdbcNamespaceHandler, http://www.springframework.org/schema/cache=org.springframework.cache.config.CacheNamespaceHandler, http://mybatis.org/schema/mybatis-spring=org.mybatis.spring.config.NamespaceHandler, http://www.springframework.org/schema/c=org.springframework.beans.factory.xml.SimpleConstructorNamespaceHandler, http://www.springframework.org/schema/tx=org.springframework.transaction.config.TxNamespaceHandler, http://www.springframework.org/schema/jms=org.springframework.jms.config.JmsNamespaceHandler, http://www.springframework.org/schema/task=org.springframework.scheduling.config.TaskNamespaceHandler, http://www.springframework.org/schema/lang=org.springframework.scripting.config.LangNamespaceHandler, http://www.springframework.org/schema/context=org.springframework.context.config.ContextNamespaceHandler}
+2018-08-19 02:40:14,018 [main] DEBUG [org.springframework.beans.factory.xml.BeanDefinitionParserDelegate] - Neither XML &apos;id&apos; nor &apos;name&apos; specified - using generated bean name [org.mybatis.spring.mapper.MapperScannerConfigurer#0]
+2018-08-19 02:40:14,020 [main] INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from file [F:\code\taotao\taotao-manager\taotao-manager-service\target\classes\spring\applicationContext-service.xml]
+2018-08-19 02:40:14,022 [main] DEBUG [org.springframework.beans.factory.xml.DefaultDocumentLoader] - Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+2018-08-19 02:40:14,025 [main] DEBUG [org.springframework.beans.factory.xml.PluggableSchemaResolver] - Found XML schema [http://www.springframework.org/schema/beans/spring-beans-4.2.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-4.2.xsd
+2018-08-19 02:40:14,074 [main] DEBUG [org.springframework.beans.factory.xml.PluggableSchemaResolver] - Found XML schema [http://www.springframework.org/schema/context/spring-context-4.2.xsd] in classpath: org/springframework/context/config/spring-context-4.2.xsd
+2018-08-19 02:40:14,092 [main] DEBUG [org.springframework.beans.factory.xml.PluggableSchemaResolver] - Found XML schema [http://www.springframework.org/schema/tool/spring-tool-4.2.xsd] in classpath: org/springframework/beans/factory/xml/spring-tool-4.2.xsd
+2018-08-19 02:40:14,121 [main] DEBUG [org.springframework.beans.factory.xml.PluggableSchemaResolver] - Found XML schema [http://code.alibabatech.com/schema/dubbo/dubbo.xsd] in classpath: META-INF/dubbo.xsd
+2018-08-19 02:40:14,161 [main] DEBUG [org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader] - Loading bean definitions
+2018-08-19 02:40:14,169 [main] DEBUG [org.springframework.core.env.StandardEnvironment] - Adding [systemProperties] PropertySource with lowest search precedence
+2018-08-19 02:40:14,170 [main] DEBUG [org.springframework.core.env.StandardEnvironment] - Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-08-19 02:40:14,170 [main] DEBUG [org.springframework.core.env.StandardEnvironment] - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2018-08-19 02:40:14,187 [main] DEBUG [org.springframework.core.io.support.PathMatchingResourcePatternResolver] - Looking for matching resources in directory tree [F:\code\taotao\taotao-manager\taotao-manager-service\target\classes\com\taotao\service]
+2018-08-19 02:40:14,188 [main] DEBUG [org.springframework.core.io.support.PathMatchingResourcePatternResolver] - Searching directory [F:\code\taotao\taotao-manager\taotao-manager-service\target\classes\com\taotao\service] for files matching pattern [F:/code/taotao/taotao-manager/taotao-manager-service/target/classes/com/taotao/service/**/*.class]
+2018-08-19 02:40:14,189 [main] DEBUG [org.springframework.core.io.support.PathMatchingResourcePatternResolver] - Searching directory [F:\code\taotao\taotao-manager\taotao-manager-service\target\classes\com\taotao\service\impl] for files matching pattern [F:/code/taotao/taotao-manager/taotao-manager-service/target/classes/com/taotao/service/**/*.class]
+2018-08-19 02:40:14,191 [main] DEBUG [org.springframework.core.io.support.PathMatchingResourcePatternResolver] - Looking for matching resources in jar file [file:/F:/code/taotao/taotao-manager/taotao-manager-interface/target/taotao-manager-interface.jar]
+2018-08-19 02:40:14,194 [main] DEBUG [org.springframework.core.io.support.PathMatchingResourcePatternResolver] - Resolved location pattern [classpath*:com/taotao/service/**/*.class] to resources [file [F:\code\taotao\taotao-manager\taotao-manager-service\target\classes\com\taotao\service\impl\ContentServiceImpl.class], file [F:\code\taotao\taotao-manager\taotao-manager-service\target\classes\com\taotao\service\impl\ItemServiceImpl.class], file [F:\code\taotao\taotao-manager\taotao-manager-service\target\classes\com\taotao\service\impl\TestServiceImpl.class], URL [jar:file:/F:/code/taotao/taotao-manager/taotao-manager-interface/target/taotao-manager-interface.jar!/com/taotao/service/ContentService.class], URL [jar:file:/F:/code/taotao/taotao-manager/taotao-manager-interface/target/taotao-manager-interface.jar!/com/taotao/service/ItemService.class], URL [jar:file:/F:/code/taotao/taotao-manager/taotao-manager-interface/target/taotao-manager-interface.jar!/com/taotao/service/TestService.class]]
+2018-08-19 02:40:14,250 [main] DEBUG [org.springframework.context.annotation.ClassPathBeanDefinitionScanner] - Identified candidate component class: file [F:\code\taotao\taotao-manager\taotao-manager-service\target\classes\com\taotao\service\impl\ContentServiceImpl.class]
+2018-08-19 02:40:14,251 [main] DEBUG [org.springframework.context.annotation.ClassPathBeanDefinitionScanner] - Identified candidate component class: file [F:\code\taotao\taotao-manager\taotao-manager-service\target\classes\com\taotao\service\impl\ItemServiceImpl.class]
+2018-08-19 02:40:14,253 [main] DEBUG [org.springframework.context.annotation.ClassPathBeanDefinitionScanner] - Identified candidate component class: file [F:\code\taotao\taotao-manager\taotao-manager-service\target\classes\com\taotao\service\impl\TestServiceImpl.class]
+2018-08-19 02:40:14,338 [main] INFO  [com.alibaba.dubbo.common.logger.LoggerFactory] - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2018-08-19 02:40:14,402 [main] INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from file [F:\code\taotao\taotao-manager\taotao-manager-service\target\classes\spring\applicationContext-trans.xml]
+2018-08-19 02:40:14,405 [main] DEBUG [org.springframework.beans.factory.xml.DefaultDocumentLoader] - Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+2018-08-19 02:40:14,409 [main] DEBUG [org.springframework.beans.factory.xml.PluggableSchemaResolver] - Found XML schema [http://www.springframework.org/schema/beans/spring-beans-4.2.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-4.2.xsd
+2018-08-19 02:40:14,425 [main] DEBUG [org.springframework.beans.factory.xml.PluggableSchemaResolver] - Found XML schema [http://www.springframework.org/schema/tx/spring-tx-4.2.xsd] in classpath: org/springframework/transaction/config/spring-tx-4.2.xsd
+2018-08-19 02:40:14,429 [main] DEBUG [org.springframework.beans.factory.xml.PluggableSchemaResolver] - Found XML schema [http://www.springframework.org/schema/tool/spring-tool-4.2.xsd] in classpath: org/springframework/beans/factory/xml/spring-tool-4.2.xsd
+2018-08-19 02:40:14,436 [main] DEBUG [org.springframework.beans.factory.xml.PluggableSchemaResolver] - Found XML schema [http://www.springframework.org/schema/aop/spring-aop-4.2.xsd] in classpath: org/springframework/aop/config/spring-aop-4.2.xsd
+2018-08-19 02:40:14,442 [main] DEBUG [org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader] - Loading bean definitions
+2018-08-19 02:40:14,538 [main] DEBUG [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loaded 22 bean definitions from location pattern [classpath:spring/applicationContext-*.xml]
+2018-08-19 02:40:14,538 [main] DEBUG [org.springframework.context.support.ClassPathXmlApplicationContext] - Bean factory for org.springframework.context.support.ClassPathXmlApplicationContext@3567135c: org.springframework.beans.factory.support.DefaultListableBeanFactory@1d76aeea: defining beans [org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,sqlSessionFactory,org.mybatis.spring.mapper.MapperScannerConfigurer#0,contentServiceImpl,itemServiceImpl,testServiceImpl,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,taotao-manager,com.alibaba.dubbo.config.RegistryConfig,dubbo,com.taotao.service.TestService,com.taotao.service.ItemService,transactionManager,txAdvice,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0]; root of factory hierarchy
+2018-08-19 02:40:14,653 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean &apos;org.springframework.context.annotation.internalConfigurationAnnotationProcessor&apos;
+2018-08-19 02:40:14,654 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating instance of bean &apos;org.springframework.context.annotation.internalConfigurationAnnotationProcessor&apos;
+2018-08-19 02:40:14,692 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Eagerly caching bean &apos;org.springframework.context.annotation.internalConfigurationAnnotationProcessor&apos; to allow for resolving potential circular references
+2018-08-19 02:40:14,696 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Finished creating instance of bean &apos;org.springframework.context.annotation.internalConfigurationAnnotationProcessor&apos;
+2018-08-19 02:40:14,816 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean &apos;org.mybatis.spring.mapper.MapperScannerConfigurer#0&apos;
+2018-08-19 02:40:14,817 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating instance of bean &apos;org.mybatis.spring.mapper.MapperScannerConfigurer#0&apos;
+2018-08-19 02:40:14,817 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Eagerly caching bean &apos;org.mybatis.spring.mapper.MapperScannerConfigurer#0&apos; to allow for resolving potential circular references
+2018-08-19 02:40:14,853 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Invoking afterPropertiesSet() on bean with name &apos;org.mybatis.spring.mapper.MapperScannerConfigurer#0&apos;
+2018-08-19 02:40:14,853 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Finished creating instance of bean &apos;org.mybatis.spring.mapper.MapperScannerConfigurer#0&apos;
+2018-08-19 02:40:14,856 [main] DEBUG [org.springframework.core.env.StandardEnvironment] - Adding [systemProperties] PropertySource with lowest search precedence
+2018-08-19 02:40:14,856 [main] DEBUG [org.springframework.core.env.StandardEnvironment] - Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-08-19 02:40:14,856 [main] DEBUG [org.springframework.core.env.StandardEnvironment] - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2018-08-19 02:40:14,859 [main] DEBUG [org.springframework.core.io.support.PathMatchingResourcePatternResolver] - Looking for matching resources in jar file [file:/F:/code/taotao/taotao-manager/taotao-manager-dao/target/taotao-manager-dao.jar]
+2018-08-19 02:40:14,861 [main] DEBUG [org.springframework.core.io.support.PathMatchingResourcePatternResolver] - Resolved location pattern [classpath*:com/taotao/dao/**/*.class] to resources [URL [jar:file:/F:/code/taotao/taotao-manager/taotao-manager-dao/target/taotao-manager-dao.jar!/com/taotao/dao/TbContentCategoryMapper.class], URL [jar:file:/F:/code/taotao/taotao-manager/taotao-manager-dao/target/taotao-manager-dao.jar!/com/taotao/dao/TbContentMapper.class], URL [jar:file:/F:/code/taotao/taotao-manager/taotao-manager-dao/target/taotao-manager-dao.jar!/com/taotao/dao/TbItemCatMapper.class], URL [jar:file:/F:/code/taotao/taotao-manager/taotao-manager-dao/target/taotao-manager-dao.jar!/com/taotao/dao/TbItemDescMapper.class], URL [jar:file:/F:/code/taotao/taotao-manager/taotao-manager-dao/target/taotao-manager-dao.jar!/com/taotao/dao/TbItemMapper.class], URL [jar:file:/F:/code/taotao/taotao-manager/taotao-manager-dao/target/taotao-manager-dao.jar!/com/taotao/dao/TbItemParamItemMapper.class], URL [jar:file:/F:/code/taotao/taotao-manager/taotao-manager-dao/target/taotao-manager-dao.jar!/com/taotao/dao/TbItemParamMapper.class], URL [jar:file:/F:/code/taotao/taotao-manager/taotao-manager-dao/target/taotao-manager-dao.jar!/com/taotao/dao/TbOrderItemMapper.class], URL [jar:file:/F:/code/taotao/taotao-manager/taotao-manager-dao/target/taotao-manager-dao.jar!/com/taotao/dao/TbOrderMapper.class], URL [jar:file:/F:/code/taotao/taotao-manager/taotao-manager-dao/target/taotao-manager-dao.jar!/com/taotao/dao/TbOrderShippingMapper.class], URL [jar:file:/F:/code/taotao/taotao-manager/taotao-manager-dao/target/taotao-manager-dao.jar!/com/taotao/dao/TbUserMapper.class], URL [jar:file:/F:/code/taotao/taotao-manager/taotao-manager-dao/target/taotao-manager-dao.jar!/com/taotao/dao/TestNowMapper.class]]
+2018-08-19 02:40:14,862 [main] DEBUG [org.mybatis.spring.mapper.ClassPathMapperScanner] - Identified candidate component class: URL [jar:file:/F:/code/taotao/taotao-manager/taotao-manager-dao/target/taotao-manager-dao.jar!/com/taotao/dao/TbContentCategoryMapper.class]
+2018-08-19 02:40:14,863 [main] DEBUG [org.mybatis.spring.mapper.ClassPathMapperScanner] - Identified candidate component class: URL [jar:file:/F:/code/taotao/taotao-manager/taotao-manager-dao/target/taotao-manager-dao.jar!/com/taotao/dao/TbContentMapper.class]
+2018-08-19 02:40:14,864 [main] DEBUG [org.mybatis.spring.mapper.ClassPathMapperScanner] - Identified candidate component class: URL [jar:file:/F:/code/taotao/taotao-manager/taotao-manager-dao/target/taotao-manager-dao.jar!/com/taotao/dao/TbItemCatMapper.class]
+2018-08-19 02:40:14,866 [main] DEBUG [org.mybatis.spring.mapper.ClassPathMapperScanner] - Identified candidate component class: URL [jar:file:/F:/code/taotao/taotao-manager/taotao-manager-dao/target/taotao-manager-dao.jar!/com/taotao/dao/TbItemDescMapper.class]
+2018-08-19 02:40:14,867 [main] DEBUG [org.mybatis.spring.mapper.ClassPathMapperScanner] - Identified candidate component class: URL [jar:file:/F:/code/taotao/taotao-manager/taotao-manager-dao/target/taotao-manager-dao.jar!/com/taotao/dao/TbItemMapper.class]
+2018-08-19 02:40:14,869 [main] DEBUG [org.mybatis.spring.mapper.ClassPathMapperScanner] - Identified candidate component class: URL [jar:file:/F:/code/taotao/taotao-manager/taotao-manager-dao/target/taotao-manager-dao.jar!/com/taotao/dao/TbItemParamItemMapper.class]
+2018-08-19 02:40:14,870 [main] DEBUG [org.mybatis.spring.mapper.ClassPathMapperScanner] - Identified candidate component class: URL [jar:file:/F:/code/taotao/taotao-manager/taotao-manager-dao/target/taotao-manager-dao.jar!/com/taotao/dao/TbItemParamMapper.class]
+2018-08-19 02:40:14,871 [main] DEBUG [org.mybatis.spring.mapper.ClassPathMapperScanner] - Identified candidate component class: URL [jar:file:/F:/code/taotao/taotao-manager/taotao-manager-dao/target/taotao-manager-dao.jar!/com/taotao/dao/TbOrderItemMapper.class]
+2018-08-19 02:40:14,872 [main] DEBUG [org.mybatis.spring.mapper.ClassPathMapperScanner] - Identified candidate component class: URL [jar:file:/F:/code/taotao/taotao-manager/taotao-manager-dao/target/taotao-manager-dao.jar!/com/taotao/dao/TbOrderMapper.class]
+2018-08-19 02:40:14,872 [main] DEBUG [org.mybatis.spring.mapper.ClassPathMapperScanner] - Identified candidate component class: URL [jar:file:/F:/code/taotao/taotao-manager/taotao-manager-dao/target/taotao-manager-dao.jar!/com/taotao/dao/TbOrderShippingMapper.class]
+2018-08-19 02:40:14,873 [main] DEBUG [org.mybatis.spring.mapper.ClassPathMapperScanner] - Identified candidate component class: URL [jar:file:/F:/code/taotao/taotao-manager/taotao-manager-dao/target/taotao-manager-dao.jar!/com/taotao/dao/TbUserMapper.class]
+2018-08-19 02:40:14,874 [main] DEBUG [org.mybatis.spring.mapper.ClassPathMapperScanner] - Identified candidate component class: URL [jar:file:/F:/code/taotao/taotao-manager/taotao-manager-dao/target/taotao-manager-dao.jar!/com/taotao/dao/TestNowMapper.class]
+2018-08-19 02:40:14,875 [main] DEBUG [org.mybatis.spring.mapper.ClassPathMapperScanner] - Creating MapperFactoryBean with name &apos;tbContentCategoryMapper&apos; and &apos;com.taotao.dao.TbContentCategoryMapper&apos; mapperInterface
+2018-08-19 02:40:14,877 [main] DEBUG [org.mybatis.spring.mapper.ClassPathMapperScanner] - Enabling autowire by type for MapperFactoryBean with name &apos;tbContentCategoryMapper&apos;.
+2018-08-19 02:40:14,878 [main] DEBUG [org.mybatis.spring.mapper.ClassPathMapperScanner] - Creating MapperFactoryBean with name &apos;tbContentMapper&apos; and &apos;com.taotao.dao.TbContentMapper&apos; mapperInterface
+2018-08-19 02:40:14,878 [main] DEBUG [org.mybatis.spring.mapper.ClassPathMapperScanner] - Enabling autowire by type for MapperFactoryBean with name &apos;tbContentMapper&apos;.
+2018-08-19 02:40:14,878 [main] DEBUG [org.mybatis.spring.mapper.ClassPathMapperScanner] - Creating MapperFactoryBean with name &apos;tbItemCatMapper&apos; and &apos;com.taotao.dao.TbItemCatMapper&apos; mapperInterface
+2018-08-19 02:40:14,878 [main] DEBUG [org.mybatis.spring.mapper.ClassPathMapperScanner] - Enabling autowire by type for MapperFactoryBean with name &apos;tbItemCatMapper&apos;.
+2018-08-19 02:40:14,878 [main] DEBUG [org.mybatis.spring.mapper.ClassPathMapperScanner] - Creating MapperFactoryBean with name &apos;tbItemDescMapper&apos; and &apos;com.taotao.dao.TbItemDescMapper&apos; mapperInterface
+2018-08-19 02:40:14,878 [main] DEBUG [org.mybatis.spring.mapper.ClassPathMapperScanner] - Enabling autowire by type for MapperFactoryBean with name &apos;tbItemDescMapper&apos;.
+2018-08-19 02:40:14,878 [main] DEBUG [org.mybatis.spring.mapper.ClassPathMapperScanner] - Creating MapperFactoryBean with name &apos;tbItemMapper&apos; and &apos;com.taotao.dao.TbItemMapper&apos; mapperInterface
+2018-08-19 02:40:14,879 [main] DEBUG [org.mybatis.spring.mapper.ClassPathMapperScanner] - Enabling autowire by type for MapperFactoryBean with name &apos;tbItemMapper&apos;.
+2018-08-19 02:40:14,879 [main] DEBUG [org.mybatis.spring.mapper.ClassPathMapperScanner] - Creating MapperFactoryBean with name &apos;tbItemParamItemMapper&apos; and &apos;com.taotao.dao.TbItemParamItemMapper&apos; mapperInterface
+2018-08-19 02:40:14,879 [main] DEBUG [org.mybatis.spring.mapper.ClassPathMapperScanner] - Enabling autowire by type for MapperFactoryBean with name &apos;tbItemParamItemMapper&apos;.
+2018-08-19 02:40:14,880 [main] DEBUG [org.mybatis.spring.mapper.ClassPathMapperScanner] - Creating MapperFactoryBean with name &apos;tbItemParamMapper&apos; and &apos;com.taotao.dao.TbItemParamMapper&apos; mapperInterface
+2018-08-19 02:40:14,882 [main] DEBUG [org.mybatis.spring.mapper.ClassPathMapperScanner] - Enabling autowire by type for MapperFactoryBean with name &apos;tbItemParamMapper&apos;.
+2018-08-19 02:40:14,883 [main] DEBUG [org.mybatis.spring.mapper.ClassPathMapperScanner] - Creating MapperFactoryBean with name &apos;tbOrderItemMapper&apos; and &apos;com.taotao.dao.TbOrderItemMapper&apos; mapperInterface
+2018-08-19 02:40:14,883 [main] DEBUG [org.mybatis.spring.mapper.ClassPathMapperScanner] - Enabling autowire by type for MapperFactoryBean with name &apos;tbOrderItemMapper&apos;.
+2018-08-19 02:40:14,885 [main] DEBUG [org.mybatis.spring.mapper.ClassPathMapperScanner] - Creating MapperFactoryBean with name &apos;tbOrderMapper&apos; and &apos;com.taotao.dao.TbOrderMapper&apos; mapperInterface
+2018-08-19 02:40:14,886 [main] DEBUG [org.mybatis.spring.mapper.ClassPathMapperScanner] - Enabling autowire by type for MapperFactoryBean with name &apos;tbOrderMapper&apos;.
+2018-08-19 02:40:14,886 [main] DEBUG [org.mybatis.spring.mapper.ClassPathMapperScanner] - Creating MapperFactoryBean with name &apos;tbOrderShippingMapper&apos; and &apos;com.taotao.dao.TbOrderShippingMapper&apos; mapperInterface
+2018-08-19 02:40:14,886 [main] DEBUG [org.mybatis.spring.mapper.ClassPathMapperScanner] - Enabling autowire by type for MapperFactoryBean with name &apos;tbOrderShippingMapper&apos;.
+2018-08-19 02:40:14,886 [main] DEBUG [org.mybatis.spring.mapper.ClassPathMapperScanner] - Creating MapperFactoryBean with name &apos;tbUserMapper&apos; and &apos;com.taotao.dao.TbUserMapper&apos; mapperInterface
+2018-08-19 02:40:14,887 [main] DEBUG [org.mybatis.spring.mapper.ClassPathMapperScanner] - Enabling autowire by type for MapperFactoryBean with name &apos;tbUserMapper&apos;.
+2018-08-19 02:40:14,887 [main] DEBUG [org.mybatis.spring.mapper.ClassPathMapperScanner] - Creating MapperFactoryBean with name &apos;testNowMapper&apos; and &apos;com.taotao.dao.TestNowMapper&apos; mapperInterface
+2018-08-19 02:40:14,887 [main] DEBUG [org.mybatis.spring.mapper.ClassPathMapperScanner] - Enabling autowire by type for MapperFactoryBean with name &apos;testNowMapper&apos;.
+2018-08-19 02:40:14,888 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean &apos;org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0&apos;
+2018-08-19 02:40:14,888 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating instance of bean &apos;org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0&apos;
+2018-08-19 02:40:14,890 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Eagerly caching bean &apos;org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0&apos; to allow for resolving potential circular references
+2018-08-19 02:40:14,903 [main] DEBUG [org.springframework.core.io.support.PathMatchingResourcePatternResolver] - Looking for matching resources in directory tree [F:\code\taotao\taotao-manager\taotao-manager-service\target\classes\properties]
+2018-08-19 02:40:14,903 [main] DEBUG [org.springframework.core.io.support.PathMatchingResourcePatternResolver] - Searching directory [F:\code\taotao\taotao-manager\taotao-manager-service\target\classes\properties] for files matching pattern [F:/code/taotao/taotao-manager/taotao-manager-service/target/classes/properties/*.properties]
+2018-08-19 02:40:14,904 [main] DEBUG [org.springframework.core.io.support.PathMatchingResourcePatternResolver] - Resolved location pattern [classpath:properties/*.properties] to resources [file [F:\code\taotao\taotao-manager\taotao-manager-service\target\classes\properties\db.properties]]
+2018-08-19 02:40:14,907 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Finished creating instance of bean &apos;org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0&apos;
+2018-08-19 02:40:14,907 [main] DEBUG [org.springframework.core.env.MutablePropertySources] - Adding [environmentProperties] PropertySource with lowest search precedence
+2018-08-19 02:40:14,908 [main] INFO  [org.springframework.context.support.PropertySourcesPlaceholderConfigurer] - Loading properties file from file [F:\code\taotao\taotao-manager\taotao-manager-service\target\classes\properties\db.properties]
+2018-08-19 02:40:14,909 [main] DEBUG [org.springframework.core.env.MutablePropertySources] - Adding [localProperties] PropertySource with lowest search precedence
+2018-08-19 02:40:14,913 [main] DEBUG [org.springframework.core.env.PropertySourcesPropertyResolver] - Searching for key &apos;jdbc.url&apos; in [environmentProperties]
+2018-08-19 02:40:14,914 [main] DEBUG [org.springframework.core.env.PropertySourcesPropertyResolver] - Searching for key &apos;jdbc.url&apos; in [systemProperties]
+2018-08-19 02:40:14,914 [main] DEBUG [org.springframework.core.env.PropertySourcesPropertyResolver] - Searching for key &apos;jdbc.url&apos; in [systemEnvironment]
+2018-08-19 02:40:14,915 [main] DEBUG [org.springframework.core.env.PropertySourcesPropertyResolver] - Could not find key &apos;jdbc.url&apos; in any property source. Returning [null]
+2018-08-19 02:40:14,916 [main] DEBUG [org.springframework.core.env.PropertySourcesPropertyResolver] - Searching for key &apos;jdbc.url&apos; in [localProperties]
+2018-08-19 02:40:14,916 [main] DEBUG [org.springframework.core.env.PropertySourcesPropertyResolver] - Found key &apos;jdbc.url&apos; in [localProperties] with type [String] and value &apos;jdbc:mysql://182.92.98.149:3306/taotao?characterEncoding=utf-8&apos;
+2018-08-19 02:40:14,919 [main] DEBUG [org.springframework.core.env.PropertySourcesPropertyResolver] - Searching for key &apos;jdbc.username&apos; in [environmentProperties]
+2018-08-19 02:40:14,919 [main] DEBUG [org.springframework.core.env.PropertySourcesPropertyResolver] - Searching for key &apos;jdbc.username&apos; in [systemProperties]
+2018-08-19 02:40:14,920 [main] DEBUG [org.springframework.core.env.PropertySourcesPropertyResolver] - Searching for key &apos;jdbc.username&apos; in [systemEnvironment]
+2018-08-19 02:40:14,920 [main] DEBUG [org.springframework.core.env.PropertySourcesPropertyResolver] - Could not find key &apos;jdbc.username&apos; in any property source. Returning [null]
+2018-08-19 02:40:14,920 [main] DEBUG [org.springframework.core.env.PropertySourcesPropertyResolver] - Searching for key &apos;jdbc.username&apos; in [localProperties]
+2018-08-19 02:40:14,921 [main] DEBUG [org.springframework.core.env.PropertySourcesPropertyResolver] - Found key &apos;jdbc.username&apos; in [localProperties] with type [String] and value &apos;root&apos;
+2018-08-19 02:40:14,923 [main] DEBUG [org.springframework.core.env.PropertySourcesPropertyResolver] - Searching for key &apos;jdbc.password&apos; in [environmentProperties]
+2018-08-19 02:40:14,923 [main] DEBUG [org.springframework.core.env.PropertySourcesPropertyResolver] - Searching for key &apos;jdbc.password&apos; in [systemProperties]
+2018-08-19 02:40:14,924 [main] DEBUG [org.springframework.core.env.PropertySourcesPropertyResolver] - Searching for key &apos;jdbc.password&apos; in [systemEnvironment]
+2018-08-19 02:40:14,924 [main] DEBUG [org.springframework.core.env.PropertySourcesPropertyResolver] - Could not find key &apos;jdbc.password&apos; in any property source. Returning [null]
+2018-08-19 02:40:14,924 [main] DEBUG [org.springframework.core.env.PropertySourcesPropertyResolver] - Searching for key &apos;jdbc.password&apos; in [localProperties]
+2018-08-19 02:40:14,925 [main] DEBUG [org.springframework.core.env.PropertySourcesPropertyResolver] - Found key &apos;jdbc.password&apos; in [localProperties] with type [String] and value &apos;root&apos;
+2018-08-19 02:40:14,925 [main] DEBUG [org.springframework.core.env.PropertySourcesPropertyResolver] - Searching for key &apos;jdbc.driver&apos; in [environmentProperties]
+2018-08-19 02:40:14,925 [main] DEBUG [org.springframework.core.env.PropertySourcesPropertyResolver] - Searching for key &apos;jdbc.driver&apos; in [systemProperties]
+2018-08-19 02:40:14,925 [main] DEBUG [org.springframework.core.env.PropertySourcesPropertyResolver] - Searching for key &apos;jdbc.driver&apos; in [systemEnvironment]
+2018-08-19 02:40:14,926 [main] DEBUG [org.springframework.core.env.PropertySourcesPropertyResolver] - Could not find key &apos;jdbc.driver&apos; in any property source. Returning [null]
+2018-08-19 02:40:14,926 [main] DEBUG [org.springframework.core.env.PropertySourcesPropertyResolver] - Searching for key &apos;jdbc.driver&apos; in [localProperties]
+2018-08-19 02:40:14,926 [main] DEBUG [org.springframework.core.env.PropertySourcesPropertyResolver] - Found key &apos;jdbc.driver&apos; in [localProperties] with type [String] and value &apos;com.mysql.jdbc.Driver&apos;
+2018-08-19 02:40:14,933 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean &apos;org.springframework.context.annotation.internalAutowiredAnnotationProcessor&apos;
+2018-08-19 02:40:14,933 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating instance of bean &apos;org.springframework.context.annotation.internalAutowiredAnnotationProcessor&apos;
+2018-08-19 02:40:14,936 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Eagerly caching bean &apos;org.springframework.context.annotation.internalAutowiredAnnotationProcessor&apos; to allow for resolving potential circular references
+2018-08-19 02:40:14,936 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Finished creating instance of bean &apos;org.springframework.context.annotation.internalAutowiredAnnotationProcessor&apos;
+2018-08-19 02:40:14,936 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean &apos;org.springframework.context.annotation.internalRequiredAnnotationProcessor&apos;
+2018-08-19 02:40:14,937 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating instance of bean &apos;org.springframework.context.annotation.internalRequiredAnnotationProcessor&apos;
+2018-08-19 02:40:14,938 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Eagerly caching bean &apos;org.springframework.context.annotation.internalRequiredAnnotationProcessor&apos; to allow for resolving potential circular references
+2018-08-19 02:40:14,938 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Finished creating instance of bean &apos;org.springframework.context.annotation.internalRequiredAnnotationProcessor&apos;
+2018-08-19 02:40:14,938 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean &apos;org.springframework.context.annotation.internalCommonAnnotationProcessor&apos;
+2018-08-19 02:40:14,939 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating instance of bean &apos;org.springframework.context.annotation.internalCommonAnnotationProcessor&apos;
+2018-08-19 02:40:14,948 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Eagerly caching bean &apos;org.springframework.context.annotation.internalCommonAnnotationProcessor&apos; to allow for resolving potential circular references
+2018-08-19 02:40:14,948 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Finished creating instance of bean &apos;org.springframework.context.annotation.internalCommonAnnotationProcessor&apos;
+2018-08-19 02:40:14,948 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean &apos;org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor&apos;
+2018-08-19 02:40:14,948 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating instance of bean &apos;org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor&apos;
+2018-08-19 02:40:14,949 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Eagerly caching bean &apos;org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor&apos; to allow for resolving potential circular references
+2018-08-19 02:40:14,949 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Finished creating instance of bean &apos;org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor&apos;
+2018-08-19 02:40:14,949 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean &apos;org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor&apos;
+2018-08-19 02:40:14,949 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating instance of bean &apos;org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor&apos;
+2018-08-19 02:40:14,959 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Eagerly caching bean &apos;org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor&apos; to allow for resolving potential circular references
+2018-08-19 02:40:14,959 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Finished creating instance of bean &apos;org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor&apos;
+2018-08-19 02:40:14,959 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean &apos;org.springframework.aop.config.internalAutoProxyCreator&apos;
+2018-08-19 02:40:14,960 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating instance of bean &apos;org.springframework.aop.config.internalAutoProxyCreator&apos;
+2018-08-19 02:40:14,977 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Eagerly caching bean &apos;org.springframework.aop.config.internalAutoProxyCreator&apos; to allow for resolving potential circular references
+2018-08-19 02:40:15,006 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Finished creating instance of bean &apos;org.springframework.aop.config.internalAutoProxyCreator&apos;
+2018-08-19 02:40:15,013 [main] DEBUG [org.springframework.context.support.ClassPathXmlApplicationContext] - Unable to locate MessageSource with name &apos;messageSource&apos;: using default [org.springframework.context.support.DelegatingMessageSource@31190526]
+2018-08-19 02:40:15,019 [main] DEBUG [org.springframework.context.support.ClassPathXmlApplicationContext] - Unable to locate ApplicationEventMulticaster with name &apos;applicationEventMulticaster&apos;: using default [org.springframework.context.event.SimpleApplicationEventMulticaster@5bda8e08]
+2018-08-19 02:40:15,022 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1d76aeea: defining beans [org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,dataSource,sqlSessionFactory,org.mybatis.spring.mapper.MapperScannerConfigurer#0,contentServiceImpl,itemServiceImpl,testServiceImpl,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,taotao-manager,com.alibaba.dubbo.config.RegistryConfig,dubbo,com.taotao.service.TestService,com.taotao.service.ItemService,transactionManager,txAdvice,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor,tbContentCategoryMapper,tbContentMapper,tbItemCatMapper,tbItemDescMapper,tbItemMapper,tbItemParamItemMapper,tbItemParamMapper,tbOrderItemMapper,tbOrderMapper,tbOrderShippingMapper,tbUserMapper,testNowMapper]; root of factory hierarchy
+2018-08-19 02:40:15,022 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0&apos;
+2018-08-19 02:40:15,022 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean &apos;dataSource&apos;
+2018-08-19 02:40:15,022 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating instance of bean &apos;dataSource&apos;
+2018-08-19 02:40:15,023 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:15,023 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating instance of bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:15,025 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Eagerly caching bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos; to allow for resolving potential circular references
+2018-08-19 02:40:15,038 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating instance of bean &apos;(inner bean)#6ed3ccb2&apos;
+2018-08-19 02:40:15,066 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Finished creating instance of bean &apos;(inner bean)#6ed3ccb2&apos;
+2018-08-19 02:40:15,067 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Finished creating instance of bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:15,147 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Eagerly caching bean &apos;dataSource&apos; to allow for resolving potential circular references
+2018-08-19 02:40:15,237 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:15,237 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:15,678 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Finished creating instance of bean &apos;dataSource&apos;
+2018-08-19 02:40:15,679 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean &apos;sqlSessionFactory&apos;
+2018-08-19 02:40:15,679 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating instance of bean &apos;sqlSessionFactory&apos;
+2018-08-19 02:40:15,679 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:15,717 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Eagerly caching bean &apos;sqlSessionFactory&apos; to allow for resolving potential circular references
+2018-08-19 02:40:15,728 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;dataSource&apos;
+2018-08-19 02:40:15,731 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Invoking afterPropertiesSet() on bean with name &apos;sqlSessionFactory&apos;
+2018-08-19 02:40:15,968 [main] DEBUG [org.mybatis.spring.SqlSessionFactoryBean] - Parsed configuration file: &apos;class path resource [mybatis/SqlMapConfig.xml]&apos;
+2018-08-19 02:40:15,970 [main] DEBUG [org.mybatis.spring.SqlSessionFactoryBean] - Property &apos;mapperLocations&apos; was not specified or no matching resources found
+2018-08-19 02:40:15,971 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:15,971 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:15,981 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Finished creating instance of bean &apos;sqlSessionFactory&apos;
+2018-08-19 02:40:15,983 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.mybatis.spring.mapper.MapperScannerConfigurer#0&apos;
+2018-08-19 02:40:15,984 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean &apos;contentServiceImpl&apos;
+2018-08-19 02:40:15,984 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating instance of bean &apos;contentServiceImpl&apos;
+2018-08-19 02:40:15,985 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:15,994 [main] DEBUG [org.springframework.beans.factory.annotation.InjectionMetadata] - Registered injected element on class [com.taotao.service.impl.ContentServiceImpl]: AutowiredFieldElement for private com.taotao.dao.TbContentCategoryMapper com.taotao.service.impl.ContentServiceImpl.mapper
+2018-08-19 02:40:15,994 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Eagerly caching bean &apos;contentServiceImpl&apos; to allow for resolving potential circular references
+2018-08-19 02:40:15,999 [main] DEBUG [org.springframework.beans.factory.annotation.InjectionMetadata] - Processing injected element of bean &apos;contentServiceImpl&apos;: AutowiredFieldElement for private com.taotao.dao.TbContentCategoryMapper com.taotao.service.impl.ContentServiceImpl.mapper
+2018-08-19 02:40:16,005 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:16,006 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean &apos;tbContentCategoryMapper&apos;
+2018-08-19 02:40:16,008 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating instance of bean &apos;tbContentCategoryMapper&apos;
+2018-08-19 02:40:16,009 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Eagerly caching bean &apos;tbContentCategoryMapper&apos; to allow for resolving potential circular references
+2018-08-19 02:40:16,035 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:16,037 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:16,039 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning eagerly cached instance of singleton bean &apos;tbContentCategoryMapper&apos; that is not fully initialized yet - a consequence of a circular reference
+2018-08-19 02:40:16,040 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:16,040 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean &apos;tbContentMapper&apos;
+2018-08-19 02:40:16,040 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating instance of bean &apos;tbContentMapper&apos;
+2018-08-19 02:40:16,040 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Eagerly caching bean &apos;tbContentMapper&apos; to allow for resolving potential circular references
+2018-08-19 02:40:16,041 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:16,041 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:16,041 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning eagerly cached instance of singleton bean &apos;tbContentMapper&apos; that is not fully initialized yet - a consequence of a circular reference
+2018-08-19 02:40:16,041 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:16,041 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean &apos;tbItemCatMapper&apos;
+2018-08-19 02:40:16,041 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating instance of bean &apos;tbItemCatMapper&apos;
+2018-08-19 02:40:16,042 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Eagerly caching bean &apos;tbItemCatMapper&apos; to allow for resolving potential circular references
+2018-08-19 02:40:16,042 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:16,043 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:16,043 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning eagerly cached instance of singleton bean &apos;tbItemCatMapper&apos; that is not fully initialized yet - a consequence of a circular reference
+2018-08-19 02:40:16,043 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:16,043 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean &apos;tbItemDescMapper&apos;
+2018-08-19 02:40:16,043 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating instance of bean &apos;tbItemDescMapper&apos;
+2018-08-19 02:40:16,045 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Eagerly caching bean &apos;tbItemDescMapper&apos; to allow for resolving potential circular references
+2018-08-19 02:40:16,046 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:16,047 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:16,047 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning eagerly cached instance of singleton bean &apos;tbItemDescMapper&apos; that is not fully initialized yet - a consequence of a circular reference
+2018-08-19 02:40:16,048 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:16,050 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean &apos;tbItemMapper&apos;
+2018-08-19 02:40:16,050 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating instance of bean &apos;tbItemMapper&apos;
+2018-08-19 02:40:16,051 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Eagerly caching bean &apos;tbItemMapper&apos; to allow for resolving potential circular references
+2018-08-19 02:40:16,053 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:16,053 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:16,054 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning eagerly cached instance of singleton bean &apos;tbItemMapper&apos; that is not fully initialized yet - a consequence of a circular reference
+2018-08-19 02:40:16,054 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:16,054 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean &apos;tbItemParamItemMapper&apos;
+2018-08-19 02:40:16,055 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating instance of bean &apos;tbItemParamItemMapper&apos;
+2018-08-19 02:40:16,055 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Eagerly caching bean &apos;tbItemParamItemMapper&apos; to allow for resolving potential circular references
+2018-08-19 02:40:16,055 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:16,056 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:16,056 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning eagerly cached instance of singleton bean &apos;tbItemParamItemMapper&apos; that is not fully initialized yet - a consequence of a circular reference
+2018-08-19 02:40:16,056 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:16,057 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean &apos;tbItemParamMapper&apos;
+2018-08-19 02:40:16,057 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating instance of bean &apos;tbItemParamMapper&apos;
+2018-08-19 02:40:16,057 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Eagerly caching bean &apos;tbItemParamMapper&apos; to allow for resolving potential circular references
+2018-08-19 02:40:16,058 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:16,058 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:16,058 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning eagerly cached instance of singleton bean &apos;tbItemParamMapper&apos; that is not fully initialized yet - a consequence of a circular reference
+2018-08-19 02:40:16,059 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:16,059 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean &apos;tbOrderItemMapper&apos;
+2018-08-19 02:40:16,059 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating instance of bean &apos;tbOrderItemMapper&apos;
+2018-08-19 02:40:16,059 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Eagerly caching bean &apos;tbOrderItemMapper&apos; to allow for resolving potential circular references
+2018-08-19 02:40:16,061 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:16,061 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:16,062 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning eagerly cached instance of singleton bean &apos;tbOrderItemMapper&apos; that is not fully initialized yet - a consequence of a circular reference
+2018-08-19 02:40:16,062 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:16,062 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean &apos;tbOrderMapper&apos;
+2018-08-19 02:40:16,063 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating instance of bean &apos;tbOrderMapper&apos;
+2018-08-19 02:40:16,063 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Eagerly caching bean &apos;tbOrderMapper&apos; to allow for resolving potential circular references
+2018-08-19 02:40:16,064 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:16,064 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:16,066 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning eagerly cached instance of singleton bean &apos;tbOrderMapper&apos; that is not fully initialized yet - a consequence of a circular reference
+2018-08-19 02:40:16,068 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:16,068 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean &apos;tbOrderShippingMapper&apos;
+2018-08-19 02:40:16,070 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating instance of bean &apos;tbOrderShippingMapper&apos;
+2018-08-19 02:40:16,071 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Eagerly caching bean &apos;tbOrderShippingMapper&apos; to allow for resolving potential circular references
+2018-08-19 02:40:16,072 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:16,072 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:16,074 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning eagerly cached instance of singleton bean &apos;tbOrderShippingMapper&apos; that is not fully initialized yet - a consequence of a circular reference
+2018-08-19 02:40:16,075 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:16,075 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean &apos;tbUserMapper&apos;
+2018-08-19 02:40:16,075 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating instance of bean &apos;tbUserMapper&apos;
+2018-08-19 02:40:16,076 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Eagerly caching bean &apos;tbUserMapper&apos; to allow for resolving potential circular references
+2018-08-19 02:40:16,077 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:16,077 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:16,077 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning eagerly cached instance of singleton bean &apos;tbUserMapper&apos; that is not fully initialized yet - a consequence of a circular reference
+2018-08-19 02:40:16,078 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:16,078 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean &apos;testNowMapper&apos;
+2018-08-19 02:40:16,078 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating instance of bean &apos;testNowMapper&apos;
+2018-08-19 02:40:16,079 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Eagerly caching bean &apos;testNowMapper&apos; to allow for resolving potential circular references
+2018-08-19 02:40:16,080 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:16,080 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:16,080 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning eagerly cached instance of singleton bean &apos;testNowMapper&apos; that is not fully initialized yet - a consequence of a circular reference
+2018-08-19 02:40:16,081 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;sqlSessionFactory&apos;
+2018-08-19 02:40:16,081 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:16,081 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:16,089 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Autowiring by type from bean name &apos;testNowMapper&apos; via property &apos;sqlSessionFactory&apos; to bean named &apos;sqlSessionFactory&apos;
+2018-08-19 02:40:16,104 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Invoking afterPropertiesSet() on bean with name &apos;testNowMapper&apos;
+2018-08-19 02:40:16,256 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Finished creating instance of bean &apos;testNowMapper&apos;
+2018-08-19 02:40:16,256 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;sqlSessionFactory&apos;
+2018-08-19 02:40:16,256 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Autowiring by type from bean name &apos;tbUserMapper&apos; via property &apos;sqlSessionFactory&apos; to bean named &apos;sqlSessionFactory&apos;
+2018-08-19 02:40:16,259 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Invoking afterPropertiesSet() on bean with name &apos;tbUserMapper&apos;
+2018-08-19 02:40:16,379 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Finished creating instance of bean &apos;tbUserMapper&apos;
+2018-08-19 02:40:16,380 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;sqlSessionFactory&apos;
+2018-08-19 02:40:16,380 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Autowiring by type from bean name &apos;tbOrderShippingMapper&apos; via property &apos;sqlSessionFactory&apos; to bean named &apos;sqlSessionFactory&apos;
+2018-08-19 02:40:16,383 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Invoking afterPropertiesSet() on bean with name &apos;tbOrderShippingMapper&apos;
+2018-08-19 02:40:16,489 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Finished creating instance of bean &apos;tbOrderShippingMapper&apos;
+2018-08-19 02:40:16,491 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;sqlSessionFactory&apos;
+2018-08-19 02:40:16,491 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Autowiring by type from bean name &apos;tbOrderMapper&apos; via property &apos;sqlSessionFactory&apos; to bean named &apos;sqlSessionFactory&apos;
+2018-08-19 02:40:16,493 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Invoking afterPropertiesSet() on bean with name &apos;tbOrderMapper&apos;
+2018-08-19 02:40:16,587 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Finished creating instance of bean &apos;tbOrderMapper&apos;
+2018-08-19 02:40:16,588 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;sqlSessionFactory&apos;
+2018-08-19 02:40:16,588 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Autowiring by type from bean name &apos;tbOrderItemMapper&apos; via property &apos;sqlSessionFactory&apos; to bean named &apos;sqlSessionFactory&apos;
+2018-08-19 02:40:16,595 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Invoking afterPropertiesSet() on bean with name &apos;tbOrderItemMapper&apos;
+2018-08-19 02:40:16,638 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Finished creating instance of bean &apos;tbOrderItemMapper&apos;
+2018-08-19 02:40:16,638 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;sqlSessionFactory&apos;
+2018-08-19 02:40:16,639 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Autowiring by type from bean name &apos;tbItemParamMapper&apos; via property &apos;sqlSessionFactory&apos; to bean named &apos;sqlSessionFactory&apos;
+2018-08-19 02:40:16,640 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Invoking afterPropertiesSet() on bean with name &apos;tbItemParamMapper&apos;
+2018-08-19 02:40:16,693 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Finished creating instance of bean &apos;tbItemParamMapper&apos;
+2018-08-19 02:40:16,693 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;sqlSessionFactory&apos;
+2018-08-19 02:40:16,693 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Autowiring by type from bean name &apos;tbItemParamItemMapper&apos; via property &apos;sqlSessionFactory&apos; to bean named &apos;sqlSessionFactory&apos;
+2018-08-19 02:40:16,694 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Invoking afterPropertiesSet() on bean with name &apos;tbItemParamItemMapper&apos;
+2018-08-19 02:40:16,775 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Finished creating instance of bean &apos;tbItemParamItemMapper&apos;
+2018-08-19 02:40:16,776 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;sqlSessionFactory&apos;
+2018-08-19 02:40:16,776 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Autowiring by type from bean name &apos;tbItemMapper&apos; via property &apos;sqlSessionFactory&apos; to bean named &apos;sqlSessionFactory&apos;
+2018-08-19 02:40:16,780 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Invoking afterPropertiesSet() on bean with name &apos;tbItemMapper&apos;
+2018-08-19 02:40:16,867 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Finished creating instance of bean &apos;tbItemMapper&apos;
+2018-08-19 02:40:16,868 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;sqlSessionFactory&apos;
+2018-08-19 02:40:16,868 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Autowiring by type from bean name &apos;tbItemDescMapper&apos; via property &apos;sqlSessionFactory&apos; to bean named &apos;sqlSessionFactory&apos;
+2018-08-19 02:40:16,869 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Invoking afterPropertiesSet() on bean with name &apos;tbItemDescMapper&apos;
+2018-08-19 02:40:16,894 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Finished creating instance of bean &apos;tbItemDescMapper&apos;
+2018-08-19 02:40:16,894 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;sqlSessionFactory&apos;
+2018-08-19 02:40:16,894 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Autowiring by type from bean name &apos;tbItemCatMapper&apos; via property &apos;sqlSessionFactory&apos; to bean named &apos;sqlSessionFactory&apos;
+2018-08-19 02:40:16,895 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Invoking afterPropertiesSet() on bean with name &apos;tbItemCatMapper&apos;
+2018-08-19 02:40:16,954 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Finished creating instance of bean &apos;tbItemCatMapper&apos;
+2018-08-19 02:40:16,955 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;sqlSessionFactory&apos;
+2018-08-19 02:40:16,957 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Autowiring by type from bean name &apos;tbContentMapper&apos; via property &apos;sqlSessionFactory&apos; to bean named &apos;sqlSessionFactory&apos;
+2018-08-19 02:40:16,959 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Invoking afterPropertiesSet() on bean with name &apos;tbContentMapper&apos;
+2018-08-19 02:40:17,024 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Finished creating instance of bean &apos;tbContentMapper&apos;
+2018-08-19 02:40:17,025 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;sqlSessionFactory&apos;
+2018-08-19 02:40:17,025 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Autowiring by type from bean name &apos;tbContentCategoryMapper&apos; via property &apos;sqlSessionFactory&apos; to bean named &apos;sqlSessionFactory&apos;
+2018-08-19 02:40:17,025 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Invoking afterPropertiesSet() on bean with name &apos;tbContentCategoryMapper&apos;
+2018-08-19 02:40:17,055 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Finished creating instance of bean &apos;tbContentCategoryMapper&apos;
+2018-08-19 02:40:17,056 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;tbContentCategoryMapper&apos;
+2018-08-19 02:40:17,063 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:17,063 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:17,095 [main] DEBUG [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - Autowiring by type from bean name &apos;contentServiceImpl&apos; to bean named &apos;tbContentCategoryMapper&apos;
+2018-08-19 02:40:17,097 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:17,097 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:17,116 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean &apos;txAdvice&apos;
+2018-08-19 02:40:17,117 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating instance of bean &apos;txAdvice&apos;
+2018-08-19 02:40:17,120 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Eagerly caching bean &apos;txAdvice&apos; to allow for resolving potential circular references
+2018-08-19 02:40:17,154 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean &apos;transactionManager&apos;
+2018-08-19 02:40:17,155 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating instance of bean &apos;transactionManager&apos;
+2018-08-19 02:40:17,155 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:17,174 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Eagerly caching bean &apos;transactionManager&apos; to allow for resolving potential circular references
+2018-08-19 02:40:17,192 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;dataSource&apos;
+2018-08-19 02:40:17,201 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Invoking afterPropertiesSet() on bean with name &apos;transactionManager&apos;
+2018-08-19 02:40:17,201 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:17,201 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:17,210 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Finished creating instance of bean &apos;transactionManager&apos;
+2018-08-19 02:40:17,211 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating instance of bean &apos;(inner bean)#3148f668&apos;
+2018-08-19 02:40:17,211 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:17,220 [main] DEBUG [org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource] - Adding transactional method [save*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT]
+2018-08-19 02:40:17,220 [main] DEBUG [org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource] - Adding transactional method [insert*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT]
+2018-08-19 02:40:17,221 [main] DEBUG [org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource] - Adding transactional method [add*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT]
+2018-08-19 02:40:17,221 [main] DEBUG [org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource] - Adding transactional method [create*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT]
+2018-08-19 02:40:17,221 [main] DEBUG [org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource] - Adding transactional method [delete*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT]
+2018-08-19 02:40:17,221 [main] DEBUG [org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource] - Adding transactional method [update*] with attribute [PROPAGATION_REQUIRED,ISOLATION_DEFAULT]
+2018-08-19 02:40:17,221 [main] DEBUG [org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource] - Adding transactional method [find*] with attribute [PROPAGATION_SUPPORTS,ISOLATION_DEFAULT,readOnly]
+2018-08-19 02:40:17,221 [main] DEBUG [org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource] - Adding transactional method [select*] with attribute [PROPAGATION_SUPPORTS,ISOLATION_DEFAULT,readOnly]
+2018-08-19 02:40:17,221 [main] DEBUG [org.springframework.transaction.interceptor.NameMatchTransactionAttributeSource] - Adding transactional method [get*] with attribute [PROPAGATION_SUPPORTS,ISOLATION_DEFAULT,readOnly]
+2018-08-19 02:40:17,221 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:17,222 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:17,239 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Finished creating instance of bean &apos;(inner bean)#3148f668&apos;
+2018-08-19 02:40:17,240 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Invoking afterPropertiesSet() on bean with name &apos;txAdvice&apos;
+2018-08-19 02:40:17,240 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Finished creating instance of bean &apos;txAdvice&apos;
+2018-08-19 02:40:17,257 [main] DEBUG [org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator] - Creating implicit proxy for bean &apos;contentServiceImpl&apos; with 0 common interceptors and 2 specific interceptors
+2018-08-19 02:40:17,259 [main] DEBUG [org.springframework.aop.framework.JdkDynamicAopProxy] - Creating JDK dynamic proxy: target source is SingletonTargetSource for target object [com.taotao.service.impl.ContentServiceImpl@3688eb5b]
+2018-08-19 02:40:17,265 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Finished creating instance of bean &apos;contentServiceImpl&apos;
+2018-08-19 02:40:17,265 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean &apos;itemServiceImpl&apos;
+2018-08-19 02:40:17,265 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating instance of bean &apos;itemServiceImpl&apos;
+2018-08-19 02:40:17,266 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:17,269 [main] DEBUG [org.springframework.beans.factory.annotation.InjectionMetadata] - Registered injected element on class [com.taotao.service.impl.ItemServiceImpl]: AutowiredFieldElement for private com.taotao.dao.TbItemMapper com.taotao.service.impl.ItemServiceImpl.mapper
+2018-08-19 02:40:17,270 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Eagerly caching bean &apos;itemServiceImpl&apos; to allow for resolving potential circular references
+2018-08-19 02:40:17,272 [main] DEBUG [org.springframework.beans.factory.annotation.InjectionMetadata] - Processing injected element of bean &apos;itemServiceImpl&apos;: AutowiredFieldElement for private com.taotao.dao.TbItemMapper com.taotao.service.impl.ItemServiceImpl.mapper
+2018-08-19 02:40:17,273 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;tbItemMapper&apos;
+2018-08-19 02:40:17,275 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:17,275 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:17,278 [main] DEBUG [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - Autowiring by type from bean name &apos;itemServiceImpl&apos; to bean named &apos;tbItemMapper&apos;
+2018-08-19 02:40:17,286 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:17,287 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:17,289 [main] DEBUG [org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator] - Creating implicit proxy for bean &apos;itemServiceImpl&apos; with 0 common interceptors and 2 specific interceptors
+2018-08-19 02:40:17,291 [main] DEBUG [org.springframework.aop.framework.JdkDynamicAopProxy] - Creating JDK dynamic proxy: target source is SingletonTargetSource for target object [com.taotao.service.impl.ItemServiceImpl@6f44a157]
+2018-08-19 02:40:17,297 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Finished creating instance of bean &apos;itemServiceImpl&apos;
+2018-08-19 02:40:17,297 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean &apos;testServiceImpl&apos;
+2018-08-19 02:40:17,297 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating instance of bean &apos;testServiceImpl&apos;
+2018-08-19 02:40:17,298 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:17,298 [main] DEBUG [org.springframework.beans.factory.annotation.InjectionMetadata] - Registered injected element on class [com.taotao.service.impl.TestServiceImpl]: AutowiredFieldElement for private com.taotao.dao.TestNowMapper com.taotao.service.impl.TestServiceImpl.mapper
+2018-08-19 02:40:17,299 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Eagerly caching bean &apos;testServiceImpl&apos; to allow for resolving potential circular references
+2018-08-19 02:40:17,302 [main] DEBUG [org.springframework.beans.factory.annotation.InjectionMetadata] - Processing injected element of bean &apos;testServiceImpl&apos;: AutowiredFieldElement for private com.taotao.dao.TestNowMapper com.taotao.service.impl.TestServiceImpl.mapper
+2018-08-19 02:40:17,309 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;testNowMapper&apos;
+2018-08-19 02:40:17,313 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:17,323 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:17,324 [main] DEBUG [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - Autowiring by type from bean name &apos;testServiceImpl&apos; to bean named &apos;testNowMapper&apos;
+2018-08-19 02:40:17,324 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:17,324 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:17,325 [main] DEBUG [org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator] - Creating implicit proxy for bean &apos;testServiceImpl&apos; with 0 common interceptors and 2 specific interceptors
+2018-08-19 02:40:17,325 [main] DEBUG [org.springframework.aop.framework.JdkDynamicAopProxy] - Creating JDK dynamic proxy: target source is SingletonTargetSource for target object [com.taotao.service.impl.TestServiceImpl@5ddcc487]
+2018-08-19 02:40:17,336 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Finished creating instance of bean &apos;testServiceImpl&apos;
+2018-08-19 02:40:17,337 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.context.annotation.internalConfigurationAnnotationProcessor&apos;
+2018-08-19 02:40:17,337 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.context.annotation.internalAutowiredAnnotationProcessor&apos;
+2018-08-19 02:40:17,337 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.context.annotation.internalRequiredAnnotationProcessor&apos;
+2018-08-19 02:40:17,337 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.context.annotation.internalCommonAnnotationProcessor&apos;
+2018-08-19 02:40:17,337 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean &apos;org.springframework.context.event.internalEventListenerProcessor&apos;
+2018-08-19 02:40:17,337 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating instance of bean &apos;org.springframework.context.event.internalEventListenerProcessor&apos;
+2018-08-19 02:40:17,338 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:17,341 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Eagerly caching bean &apos;org.springframework.context.event.internalEventListenerProcessor&apos; to allow for resolving potential circular references
+2018-08-19 02:40:17,344 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:17,344 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:17,346 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Finished creating instance of bean &apos;org.springframework.context.event.internalEventListenerProcessor&apos;
+2018-08-19 02:40:17,347 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean &apos;org.springframework.context.event.internalEventListenerFactory&apos;
+2018-08-19 02:40:17,347 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating instance of bean &apos;org.springframework.context.event.internalEventListenerFactory&apos;
+2018-08-19 02:40:17,347 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:17,348 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Eagerly caching bean &apos;org.springframework.context.event.internalEventListenerFactory&apos; to allow for resolving potential circular references
+2018-08-19 02:40:17,354 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:17,354 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:17,359 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Finished creating instance of bean &apos;org.springframework.context.event.internalEventListenerFactory&apos;
+2018-08-19 02:40:17,359 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean &apos;taotao-manager&apos;
+2018-08-19 02:40:17,359 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating instance of bean &apos;taotao-manager&apos;
+2018-08-19 02:40:17,359 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:17,373 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Eagerly caching bean &apos;taotao-manager&apos; to allow for resolving potential circular references
+2018-08-19 02:40:17,406 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:17,407 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:17,409 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Finished creating instance of bean &apos;taotao-manager&apos;
+2018-08-19 02:40:17,409 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean &apos;com.alibaba.dubbo.config.RegistryConfig&apos;
+2018-08-19 02:40:17,411 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating instance of bean &apos;com.alibaba.dubbo.config.RegistryConfig&apos;
+2018-08-19 02:40:17,411 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:17,419 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Eagerly caching bean &apos;com.alibaba.dubbo.config.RegistryConfig&apos; to allow for resolving potential circular references
+2018-08-19 02:40:17,425 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:17,425 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:17,428 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Finished creating instance of bean &apos;com.alibaba.dubbo.config.RegistryConfig&apos;
+2018-08-19 02:40:17,429 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean &apos;dubbo&apos;
+2018-08-19 02:40:17,429 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating instance of bean &apos;dubbo&apos;
+2018-08-19 02:40:17,429 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:17,436 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Eagerly caching bean &apos;dubbo&apos; to allow for resolving potential circular references
+2018-08-19 02:40:17,442 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:17,446 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:17,452 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Finished creating instance of bean &apos;dubbo&apos;
+2018-08-19 02:40:17,453 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean &apos;com.taotao.service.TestService&apos;
+2018-08-19 02:40:17,453 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating instance of bean &apos;com.taotao.service.TestService&apos;
+2018-08-19 02:40:17,453 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:17,531 [main] DEBUG [com.alibaba.dubbo.common.extension.ExtensionLoader] -  [DUBBO] package com.alibaba.dubbo.rpc;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class Protocol$Adpative implements com.alibaba.dubbo.rpc.Protocol {
+public void destroy() {throw new UnsupportedOperationException(&quot;method public abstract void com.alibaba.dubbo.rpc.Protocol.destroy() of interface com.alibaba.dubbo.rpc.Protocol is not adaptive method!&quot;);
+}
+public int getDefaultPort() {throw new UnsupportedOperationException(&quot;method public abstract int com.alibaba.dubbo.rpc.Protocol.getDefaultPort() of interface com.alibaba.dubbo.rpc.Protocol is not adaptive method!&quot;);
+}
+public com.alibaba.dubbo.rpc.Invoker refer(java.lang.Class arg0, com.alibaba.dubbo.common.URL arg1) throws java.lang.Class {
+if (arg1 == null) throw new IllegalArgumentException(&quot;url == null&quot;);
+com.alibaba.dubbo.common.URL url = arg1;
+String extName = ( url.getProtocol() == null ? &quot;dubbo&quot; : url.getProtocol() );
+if(extName == null) throw new IllegalStateException(&quot;Fail to get extension(com.alibaba.dubbo.rpc.Protocol) name from url(&quot; + url.toString() + &quot;) use keys([protocol])&quot;);
+com.alibaba.dubbo.rpc.Protocol extension = (com.alibaba.dubbo.rpc.Protocol)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.rpc.Protocol.class).getExtension(extName);
+return extension.refer(arg0, arg1);
+}
+public com.alibaba.dubbo.rpc.Exporter export(com.alibaba.dubbo.rpc.Invoker arg0) throws com.alibaba.dubbo.rpc.Invoker {
+if (arg0 == null) throw new IllegalArgumentException(&quot;com.alibaba.dubbo.rpc.Invoker argument == null&quot;);
+if (arg0.getUrl() == null) throw new IllegalArgumentException(&quot;com.alibaba.dubbo.rpc.Invoker argument getUrl() == null&quot;);com.alibaba.dubbo.common.URL url = arg0.getUrl();
+String extName = ( url.getProtocol() == null ? &quot;dubbo&quot; : url.getProtocol() );
+if(extName == null) throw new IllegalStateException(&quot;Fail to get extension(com.alibaba.dubbo.rpc.Protocol) name from url(&quot; + url.toString() + &quot;) use keys([protocol])&quot;);
+com.alibaba.dubbo.rpc.Protocol extension = (com.alibaba.dubbo.rpc.Protocol)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.rpc.Protocol.class).getExtension(extName);
+return extension.export(arg0);
+}
+}, dubbo version: 2.5.3, current host: 127.0.0.1
+2018-08-19 02:40:17,868 [main] DEBUG [com.alibaba.dubbo.common.extension.ExtensionLoader] -  [DUBBO] package com.alibaba.dubbo.rpc;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class ProxyFactory$Adpative implements com.alibaba.dubbo.rpc.ProxyFactory {
+public com.alibaba.dubbo.rpc.Invoker getInvoker(java.lang.Object arg0, java.lang.Class arg1, com.alibaba.dubbo.common.URL arg2) throws java.lang.Object {
+if (arg2 == null) throw new IllegalArgumentException(&quot;url == null&quot;);
+com.alibaba.dubbo.common.URL url = arg2;
+String extName = url.getParameter(&quot;proxy&quot;, &quot;javassist&quot;);
+if(extName == null) throw new IllegalStateException(&quot;Fail to get extension(com.alibaba.dubbo.rpc.ProxyFactory) name from url(&quot; + url.toString() + &quot;) use keys([proxy])&quot;);
+com.alibaba.dubbo.rpc.ProxyFactory extension = (com.alibaba.dubbo.rpc.ProxyFactory)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.rpc.ProxyFactory.class).getExtension(extName);
+return extension.getInvoker(arg0, arg1, arg2);
+}
+public java.lang.Object getProxy(com.alibaba.dubbo.rpc.Invoker arg0) throws com.alibaba.dubbo.rpc.Invoker {
+if (arg0 == null) throw new IllegalArgumentException(&quot;com.alibaba.dubbo.rpc.Invoker argument == null&quot;);
+if (arg0.getUrl() == null) throw new IllegalArgumentException(&quot;com.alibaba.dubbo.rpc.Invoker argument getUrl() == null&quot;);com.alibaba.dubbo.common.URL url = arg0.getUrl();
+String extName = url.getParameter(&quot;proxy&quot;, &quot;javassist&quot;);
+if(extName == null) throw new IllegalStateException(&quot;Fail to get extension(com.alibaba.dubbo.rpc.ProxyFactory) name from url(&quot; + url.toString() + &quot;) use keys([proxy])&quot;);
+com.alibaba.dubbo.rpc.ProxyFactory extension = (com.alibaba.dubbo.rpc.ProxyFactory)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.rpc.ProxyFactory.class).getExtension(extName);
+return extension.getProxy(arg0);
+}
+}, dubbo version: 2.5.3, current host: 127.0.0.1
+2018-08-19 02:40:17,900 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Eagerly caching bean &apos;com.taotao.service.TestService&apos; to allow for resolving potential circular references
+2018-08-19 02:40:17,933 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;testServiceImpl&apos;
+2018-08-19 02:40:17,935 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Invoking afterPropertiesSet() on bean with name &apos;com.taotao.service.TestService&apos;
+2018-08-19 02:40:17,936 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;taotao-manager&apos;
+2018-08-19 02:40:17,937 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;com.alibaba.dubbo.config.RegistryConfig&apos;
+2018-08-19 02:40:17,937 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;dubbo&apos;
+2018-08-19 02:40:17,938 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:17,938 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:17,952 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Finished creating instance of bean &apos;com.taotao.service.TestService&apos;
+2018-08-19 02:40:17,952 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating shared instance of singleton bean &apos;com.taotao.service.ItemService&apos;
+2018-08-19 02:40:17,952 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Creating instance of bean &apos;com.taotao.service.ItemService&apos;
+2018-08-19 02:40:17,952 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:17,956 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Eagerly caching bean &apos;com.taotao.service.ItemService&apos; to allow for resolving potential circular references
+2018-08-19 02:40:17,956 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;itemServiceImpl&apos;
+2018-08-19 02:40:17,957 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Invoking afterPropertiesSet() on bean with name &apos;com.taotao.service.ItemService&apos;
+2018-08-19 02:40:17,957 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;taotao-manager&apos;
+2018-08-19 02:40:17,958 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;com.alibaba.dubbo.config.RegistryConfig&apos;
+2018-08-19 02:40:17,958 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;dubbo&apos;
+2018-08-19 02:40:17,959 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:17,959 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:17,960 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Finished creating instance of bean &apos;com.taotao.service.ItemService&apos;
+2018-08-19 02:40:17,964 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;transactionManager&apos;
+2018-08-19 02:40:17,964 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;txAdvice&apos;
+2018-08-19 02:40:17,964 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.config.internalAutoProxyCreator&apos;
+2018-08-19 02:40:17,964 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+2018-08-19 02:40:17,964 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor&apos;
+2018-08-19 02:40:17,964 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor&apos;
+2018-08-19 02:40:17,965 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;tbContentCategoryMapper&apos;
+2018-08-19 02:40:17,965 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;tbContentMapper&apos;
+2018-08-19 02:40:17,965 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;tbItemCatMapper&apos;
+2018-08-19 02:40:17,965 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;tbItemDescMapper&apos;
+2018-08-19 02:40:17,965 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;tbItemMapper&apos;
+2018-08-19 02:40:17,965 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;tbItemParamItemMapper&apos;
+2018-08-19 02:40:17,965 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;tbItemParamMapper&apos;
+2018-08-19 02:40:17,965 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;tbOrderItemMapper&apos;
+2018-08-19 02:40:17,966 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;tbOrderMapper&apos;
+2018-08-19 02:40:17,966 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;tbOrderShippingMapper&apos;
+2018-08-19 02:40:17,966 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;tbUserMapper&apos;
+2018-08-19 02:40:17,966 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;testNowMapper&apos;
+2018-08-19 02:40:17,967 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;org.springframework.context.event.internalEventListenerFactory&apos;
+2018-08-19 02:40:18,038 [main] DEBUG [org.springframework.context.support.ClassPathXmlApplicationContext] - Unable to locate LifecycleProcessor with name &apos;lifecycleProcessor&apos;: using default [org.springframework.context.support.DefaultLifecycleProcessor@25bfcafd]
+2018-08-19 02:40:18,039 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;lifecycleProcessor&apos;
+2018-08-19 02:40:18,045 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;sqlSessionFactory&apos;
+2018-08-19 02:40:18,045 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;com.taotao.service.TestService&apos;
+2018-08-19 02:40:18,045 [main] DEBUG [org.springframework.beans.factory.support.DefaultListableBeanFactory] - Returning cached instance of singleton bean &apos;com.taotao.service.ItemService&apos;
+2018-08-19 02:40:18,048 [main] INFO  [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] The service ready on spring started. service: com.taotao.service.TestService, dubbo version: 2.5.3, current host: 127.0.0.1
+2018-08-19 02:40:18,495 [main] DEBUG [com.alibaba.dubbo.common.extension.ExtensionLoader] -  [DUBBO] package com.alibaba.dubbo.cache;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class CacheFactory$Adpative implements com.alibaba.dubbo.cache.CacheFactory {
+public com.alibaba.dubbo.cache.Cache getCache(com.alibaba.dubbo.common.URL arg0) {
+if (arg0 == null) throw new IllegalArgumentException(&quot;url == null&quot;);
+com.alibaba.dubbo.common.URL url = arg0;
+String extName = url.getParameter(&quot;cache&quot;, &quot;lru&quot;);
+if(extName == null) throw new IllegalStateException(&quot;Fail to get extension(com.alibaba.dubbo.cache.CacheFactory) name from url(&quot; + url.toString() + &quot;) use keys([cache])&quot;);
+com.alibaba.dubbo.cache.CacheFactory extension = (com.alibaba.dubbo.cache.CacheFactory)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.cache.CacheFactory.class).getExtension(extName);
+return extension.getCache(arg0);
+}
+}, dubbo version: 2.5.3, current host: 127.0.0.1
+2018-08-19 02:40:18,526 [main] DEBUG [com.alibaba.dubbo.common.extension.ExtensionLoader] -  [DUBBO] package com.alibaba.dubbo.monitor;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class MonitorFactory$Adpative implements com.alibaba.dubbo.monitor.MonitorFactory {
+public com.alibaba.dubbo.monitor.Monitor getMonitor(com.alibaba.dubbo.common.URL arg0) {
+if (arg0 == null) throw new IllegalArgumentException(&quot;url == null&quot;);
+com.alibaba.dubbo.common.URL url = arg0;
+String extName = ( url.getProtocol() == null ? &quot;dubbo&quot; : url.getProtocol() );
+if(extName == null) throw new IllegalStateException(&quot;Fail to get extension(com.alibaba.dubbo.monitor.MonitorFactory) name from url(&quot; + url.toString() + &quot;) use keys([protocol])&quot;);
+com.alibaba.dubbo.monitor.MonitorFactory extension = (com.alibaba.dubbo.monitor.MonitorFactory)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.monitor.MonitorFactory.class).getExtension(extName);
+return extension.getMonitor(arg0);
+}
+}, dubbo version: 2.5.3, current host: 127.0.0.1
+2018-08-19 02:40:18,557 [main] DEBUG [com.alibaba.dubbo.common.extension.ExtensionLoader] -  [DUBBO] package com.alibaba.dubbo.validation;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class Validation$Adpative implements com.alibaba.dubbo.validation.Validation {
+public com.alibaba.dubbo.validation.Validator getValidator(com.alibaba.dubbo.common.URL arg0) {
+if (arg0 == null) throw new IllegalArgumentException(&quot;url == null&quot;);
+com.alibaba.dubbo.common.URL url = arg0;
+String extName = url.getParameter(&quot;validation&quot;, &quot;jvalidation&quot;);
+if(extName == null) throw new IllegalStateException(&quot;Fail to get extension(com.alibaba.dubbo.validation.Validation) name from url(&quot; + url.toString() + &quot;) use keys([validation])&quot;);
+com.alibaba.dubbo.validation.Validation extension = (com.alibaba.dubbo.validation.Validation)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.validation.Validation.class).getExtension(extName);
+return extension.getValidator(arg0);
+}
+}, dubbo version: 2.5.3, current host: 127.0.0.1
+2018-08-19 02:40:18,579 [main] INFO  [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Export dubbo service com.taotao.service.TestService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2018-08-19 02:40:18,579 [main] INFO  [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Export dubbo service com.taotao.service.TestService to url dubbo://192.168.0.105:20880/com.taotao.service.TestService?anyhost=true&amp;application=taotao-manager&amp;dubbo=2.5.3&amp;interface=com.taotao.service.TestService&amp;methods=selectNow&amp;pid=16812&amp;revision=interface&amp;side=provider&amp;timestamp=1534617618359, dubbo version: 2.5.3, current host: 127.0.0.1
+2018-08-19 02:40:18,579 [main] INFO  [com.alibaba.dubbo.config.AbstractConfig] -  [DUBBO] Register dubbo service com.taotao.service.TestService url dubbo://192.168.0.105:20880/com.taotao.service.TestService?anyhost=true&amp;application=taotao-manager&amp;dubbo=2.5.3&amp;interface=com.taotao.service.TestService&amp;methods=selectNow&amp;pid=16812&amp;revision=interface&amp;side=provider&amp;timestamp=1534617618359 to registry registry://182.92.98.149:2181/com.alibaba.dubbo.registry.RegistryService?application=taotao-manager&amp;dubbo=2.5.3&amp;pid=16812&amp;registry=zookeeper&amp;timestamp=1534617618063, dubbo version: 2.5.3, current host: 127.0.0.1
+2018-08-19 02:40:18,595 [main] DEBUG [com.alibaba.dubbo.common.extension.ExtensionLoader] -  [DUBBO] package com.alibaba.dubbo.rpc.cluster;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class Cluster$Adpative implements com.alibaba.dubbo.rpc.cluster.Cluster {
+public com.alibaba.dubbo.rpc.Invoker join(com.alibaba.dubbo.rpc.cluster.Directory arg0) throws com.alibaba.dubbo.rpc.cluster.Directory {
+if (arg0 == null) throw new IllegalArgumentException(&quot;com.alibaba.dubbo.rpc.cluster.Directory argument == null&quot;);
+if (arg0.getUrl() == null) throw new IllegalArgumentException(&quot;com.alibaba.dubbo.rpc.cluster.Directory argument getUrl() == null&quot;);com.alibaba.dubbo.common.URL url = arg0.getUrl();
+String extName = url.getParameter(&quot;cluster&quot;, &quot;failover&quot;);
+if(extName == null) throw new IllegalStateException(&quot;Fail to get extension(com.alibaba.dubbo.rpc.cluster.Cluster) name from url(&quot; + url.toString() + &quot;) use keys([cluster])&quot;);
+com.alibaba.dubbo.rpc.cluster.Cluster extension = (com.alibaba.dubbo.rpc.cluster.Cluster)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.rpc.cluster.Cluster.class).getExtension(extName);
+return extension.join(arg0);
+}
+}, dubbo version: 2.5.3, current host: 127.0.0.1
+2018-08-19 02:40:18,651 [main] DEBUG [com.alibaba.dubbo.common.extension.ExtensionLoader] -  [DUBBO] package com.alibaba.dubbo.registry;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class RegistryFactory$Adpative implements com.alibaba.dubbo.registry.RegistryFactory {
+public com.alibaba.dubbo.registry.Registry getRegistry(com.alibaba.dubbo.common.URL arg0) {
+if (arg0 == null) throw new IllegalArgumentException(&quot;url == null&quot;);
+com.alibaba.dubbo.common.URL url = arg0;
+String extName = ( url.getProtocol() == null ? &quot;dubbo&quot; : url.getProtocol() );
+if(extName == null) throw new IllegalStateException(&quot;Fail to get extension(com.alibaba.dubbo.registry.RegistryFactory) name from url(&quot; + url.toString() + &quot;) use keys([protocol])&quot;);
+com.alibaba.dubbo.registry.RegistryFactory extension = (com.alibaba.dubbo.registry.RegistryFactory)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.registry.RegistryFactory.class).getExtension(extName);
+return extension.getRegistry(arg0);
+}
+}, dubbo version: 2.5.3, current host: 127.0.0.1
+2018-08-19 02:40:18,707 [main] DEBUG [com.alibaba.dubbo.common.extension.ExtensionLoader] -  [DUBBO] package com.alibaba.dubbo.remoting;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class Transporter$Adpative implements com.alibaba.dubbo.remoting.Transporter {
+public com.alibaba.dubbo.remoting.Client connect(com.alibaba.dubbo.common.URL arg0, com.alibaba.dubbo.remoting.ChannelHandler arg1) throws com.alibaba.dubbo.common.URL {
+if (arg0 == null) throw new IllegalArgumentException(&quot;url == null&quot;);
+com.alibaba.dubbo.common.URL url = arg0;
+String extName = url.getParameter(&quot;client&quot;, url.getParameter(&quot;transporter&quot;, &quot;netty&quot;));
+if(extName == null) throw new IllegalStateException(&quot;Fail to get extension(com.alibaba.dubbo.remoting.Transporter) name from url(&quot; + url.toString() + &quot;) use keys([client, transporter])&quot;);
+com.alibaba.dubbo.remoting.Transporter extension = (com.alibaba.dubbo.remoting.Transporter)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.remoting.Transporter.class).getExtension(extName);
+return extension.connect(arg0, arg1);
+}
+public com.alibaba.dubbo.remoting.Server bind(com.alibaba.dubbo.common.URL arg0, com.alibaba.dubbo.remoting.ChannelHandler arg1) throws com.alibaba.dubbo.common.URL {
+if (arg0 == null) throw new IllegalArgumentException(&quot;url == null&quot;);
+com.alibaba.dubbo.common.URL url = arg0;
+String extName = url.getParameter(&quot;server&quot;, url.getParameter(&quot;transporter&quot;, &quot;netty&quot;));
+if(extName == null) throw new IllegalStateException(&quot;Fail to get extension(com.alibaba.dubbo.remoting.Transporter) name from url(&quot; + url.toString() + &quot;) use keys([server, transporter])&quot;);
+com.alibaba.dubbo.remoting.Transporter extension = (com.alibaba.dubbo.remoting.Transporter)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.remoting.Transporter.class).getExtension(extName);
+return extension.bind(arg0, arg1);
+}
+}, dubbo version: 2.5.3, current host: 127.0.0.1
+2018-08-19 02:40:18,863 [main] DEBUG [com.alibaba.dubbo.common.extension.ExtensionLoader] -  [DUBBO] package com.alibaba.dubbo.remoting;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class Dispatcher$Adpative implements com.alibaba.dubbo.remoting.Dispatcher {
+public com.alibaba.dubbo.remoting.ChannelHandler dispatch(com.alibaba.dubbo.remoting.ChannelHandler arg0, com.alibaba.dubbo.common.URL arg1) {
+if (arg1 == null) throw new IllegalArgumentException(&quot;url == null&quot;);
+com.alibaba.dubbo.common.URL url = arg1;
+String extName = url.getParameter(&quot;dispatcher&quot;, url.getParameter(&quot;dispather&quot;, url.getParameter(&quot;channel.handler&quot;, &quot;all&quot;)));
+if(extName == null) throw new IllegalStateException(&quot;Fail to get extension(com.alibaba.dubbo.remoting.Dispatcher) name from url(&quot; + url.toString() + &quot;) use keys([dispatcher, dispather, channel.handler])&quot;);
+com.alibaba.dubbo.remoting.Dispatcher extension = (com.alibaba.dubbo.remoting.Dispatcher)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.remoting.Dispatcher.class).getExtension(extName);
+return extension.dispatch(arg0, arg1);
+}
+}, dubbo version: 2.5.3, current host: 127.0.0.1
+2018-08-19 02:40:18,888 [main] DEBUG [com.alibaba.dubbo.common.extension.ExtensionLoader] -  [DUBBO] package com.alibaba.dubbo.common.threadpool;
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
+public class ThreadPool$Adpative implements com.alibaba.dubbo.common.threadpool.ThreadPool {
+public java.util.concurrent.Executor getExecutor(com.alibaba.dubbo.common.URL arg0) {
+if (arg0 == null) throw new IllegalArgumentException(&quot;url == null&quot;);
+com.alibaba.dubbo.common.URL url = arg0;
+String extName = url.getParameter(&quot;threadpool&quot;, &quot;fixed&quot;);
+if(extName == null) throw new IllegalStateException(&quot;Fail to get extension(com.alibaba.dubbo.common.threadpool.ThreadPool) name from url(&quot; + url.toString() + &quot;) use keys([threadpool])&quot;);
+com.alibaba.dubbo.common.threadpool.ThreadPool extension = (com.alibaba.dubbo.common.threadpool.ThreadPool)ExtensionLoader.getExtensionLoader(com.alibaba.dubbo.common.threadpool.ThreadPool.class).getExtension(extName);
+return extension.getExecutor(arg0);
+}
+}, dubbo version: 2.5.3, current host: 127.0.0.1
+2018-08-19 02:40:18,971 [main] DEBUG [org.jboss.netty.channel.socket.nio.SelectorUtil] -  [DUBBO] Using select timeout of 500, dubbo version: 2.5.3, current host: 127.0.0.1
+2018-08-19 02:40:18,971 [main] DEBUG [org.jboss.netty.channel.socket.nio.SelectorUtil] -  [DUBBO] Epoll-bug workaround enabled = false, dubbo version: 2.5.3, current host: 127.0.0.1
+</system-out>
+  </testcase>
+</testsuite>
